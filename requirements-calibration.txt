@@ -1,0 +1,3 @@
+# Optional: rerun the approximate landmark-based camera fit.
+numpy>=1.24
+scipy>=1.10

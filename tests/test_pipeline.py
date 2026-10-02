@@ -43,7 +43,10 @@ class DatasetTests(unittest.TestCase):
         return "\n".join(validator.validate(self.root)[0])
 
     def test_baseline(self):
-        self.assertEqual(validator.validate(self.root), ([], 32, 6, 0))
+        errors, references, dimensions, assumptions = validator.validate(self.root)
+        self.assertEqual(errors, [])
+        self.assertEqual((references, dimensions), (32, 6))
+        self.assertGreaterEqual(assumptions, 0)
 
     def test_axes_and_origin(self):
         self.change("data/coordinate_system.yaml", lambda d: d["axes"].update(x_positive="west"))

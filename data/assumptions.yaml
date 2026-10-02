@@ -1,1 +1,906 @@
-assumptions: {}
+assumptions:
+  hall_exterior_width:
+    value: 23.95
+    unit: m
+    reason: 21.55 m documented interior hall plus approximately 1.20 m wall zone on
+      either side; visual P01 scaling.
+    confidence: medium
+    evidence:
+    - P01
+    - P08
+    - M06
+    iteration: G1-01
+  hall_wall_zone:
+    value: 1.2
+    unit: m
+    reason: Effective coarse interior-to-exterior offset; not measured masonry thickness.
+    confidence: low
+    evidence:
+    - P01
+    - P08
+    iteration: G1-01
+  arm_half_width:
+    value: 6.4
+    unit: m
+    reason: P01 arm outline relative to hall width; outer half-decagonal caps and
+      structural crossing widths.
+    confidence: medium
+    evidence:
+    - P01
+    - M02
+    - M16
+    iteration: G1-01
+  conch_cap_center:
+    value: 15.2
+    unit: m
+    reason: Distance from crossing to cap center fitted to P01 proportions; tip becomes
+      about 21.29 m.
+    confidence: medium
+    evidence:
+    - P01
+    - M02
+    - M01
+    iteration: G1-01
+  conch_wall_zone:
+    value: 1.7
+    unit: m
+    reason: Effective radial exterior-to-interior tip offset; cross-checks 39 m documented
+      internal transept span, not measured wall thickness.
+    confidence: low
+    evidence:
+    - P01
+    iteration: G1-01
+  conch_facets:
+    value: 5
+    unit: count
+    reason: Five faces on half-decagon from P01, matching visible flat end and angled
+      faces.
+    confidence: high
+    evidence:
+    - P01
+    - M02
+    - M16
+    iteration: G1-01
+  crossing_structural_pitch:
+    value: 10.9
+    unit: m
+    reason: Approximate pier-center pitch from P01 scaled by documented hall interior;
+      distinct from approximately 10 m clear crossing anchor.
+    confidence: medium
+    evidence:
+    - P01
+    - P08
+    iteration: G1-01
+  nave_west_end:
+    value: -36.0
+    unit: m
+    reason: Nave/west-hall boundary inferred from P01; gives about 55.6 m clear longitudinal
+      proxy to east inner tip.
+    confidence: medium
+    evidence:
+    - P01
+    - P06
+    iteration: G1-01
+  wall_eave_height:
+    value: 22.0
+    unit: m
+    reason: Exterior cornice slightly above documented 20.20 m vault height, P08 vertical
+      proportion and modern roof-wall junction.
+    confidence: medium
+    evidence:
+    - P08
+    - P02
+    - M02
+    iteration: G1-01
+  main_roof_ridge:
+    value: 32.0
+    unit: m
+    reason: Main roof rise about 10 m over eaves from P08 and modern cap slopes.
+    confidence: medium
+    evidence:
+    - P08
+    - M02
+    - M18
+    - M01
+    iteration: G1-01
+  side_roof_ridge:
+    value: 27.0
+    unit: m
+    reason: Lower transverse nave gable roofs visible beside main ridge; approximate
+      P02/P08 height.
+    confidence: medium
+    evidence:
+    - P02
+    - P08
+    - M01
+    - M06
+    iteration: G1-01
+  side_roof_count:
+    value: 5
+    unit: count
+    reason: Five independent transverse roof units per nave side in P02; modern aerial
+      shows matching rhythm, fine count remains to refine.
+    confidence: medium
+    evidence:
+    - P02
+    - M01
+    - M07
+    iteration: G1-01
+  roof_overhang:
+    value: 0.25
+    unit: m
+    reason: Small cornice/roof projection simplified for coarse silhouette.
+    confidence: low
+    evidence:
+    - M18
+    - M17
+    iteration: G1-01
+  roof_base_inset:
+    value: 0.05
+    unit: m
+    reason: Deliberate slight overlap of roof base into massing to avoid numerical
+      seams; not a physical measurement.
+    confidence: low
+    evidence:
+    - M02
+    iteration: G1-01
+  west_tower_center_x:
+    value: -40.6
+    unit: m
+    reason: Tower position from independent P01 scaling and nave boundary.
+    confidence: medium
+    evidence:
+    - P01
+    - M10
+    iteration: G1-01
+  west_tower_center_y:
+    value: 8.4
+    unit: m
+    reason: Half of approximately 16.8 m twin-tower center spacing inferred from P01
+      and P07.
+    confidence: medium
+    evidence:
+    - P01
+    - P07
+    - M10
+    iteration: G1-01
+  west_tower_core_width:
+    value: 8.4
+    unit: m
+    reason: Square tower shaft width excluding projecting stepped corner supports.
+    confidence: medium
+    evidence:
+    - P01
+    - P07
+    - M10
+    iteration: G1-01
+  west_tower_core_depth:
+    value: 9.2
+    unit: m
+    reason: East-west core depth from P01; eastern face meets nave west end.
+    confidence: medium
+    evidence:
+    - P01
+    - M09
+    iteration: G1-01
+  west_tower_shoulder:
+    value: 44.0
+    unit: m
+    reason: Upper shaft gallery level relative to approximately 80 m documented tower
+      height and P07 section.
+    confidence: medium
+    evidence:
+    - P07
+    - M10
+    - M09
+    iteration: G1-01
+  west_tower_spire_base:
+    value: 54.0
+    unit: m
+    reason: Top of octagonal upper stage/base of stone helm inferred from P07 and
+      M10.
+    confidence: medium
+    evidence:
+    - P07
+    - M10
+    - M11
+    iteration: G1-01
+  west_tower_octagon_radius:
+    value: 4.2
+    unit: m
+    reason: Octagonal upper-stage circumradius approximately matching tower shaft
+      footprint.
+    confidence: medium
+    evidence:
+    - M10
+    - M09
+    - P07
+    iteration: G1-01
+  spire_tip_radius:
+    value: 0.12
+    unit: m
+    reason: Small finite cap at stone-helm end; simplified silhouette before finial.
+    confidence: low
+    evidence:
+    - M10
+    iteration: G1-01
+  finial_extent:
+    value: 0.6
+    unit: m
+    reason: Simplified terminal marker within approximately 80 m tower anchor; exact
+      ornament postponed.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    iteration: G1-01
+  corner_support_width:
+    value: 1.5
+    unit: m
+    reason: Primary tower corner pier width simplified from M09/P01; not fine buttress
+      detailing.
+    confidence: medium
+    evidence:
+    - P01
+    - M09
+    - M10
+    iteration: G1-01
+  corner_support_depth:
+    value: 2.0
+    unit: m
+    reason: Primary projecting tower corner volume from P01 and close M09.
+    confidence: medium
+    evidence:
+    - P01
+    - M09
+    iteration: G1-01
+  corner_support_first_step:
+    value: 24.0
+    unit: m
+    reason: First major tower-support setback near nave roof-wall height.
+    confidence: medium
+    evidence:
+    - M09
+    - P07
+    iteration: G1-01
+  corner_support_second_step:
+    value: 38.0
+    unit: m
+    reason: Secondary coarse setback below upper gallery; simplified stepped support
+      silhouette.
+    confidence: low
+    evidence:
+    - M09
+    - P07
+    iteration: G1-01
+  corner_support_mid_factor:
+    value: 0.75
+    unit: ratio
+    reason: Simplified middle-tier support projection as fraction of base.
+    confidence: low
+    evidence:
+    - M09
+    iteration: G1-01
+  corner_support_top_factor:
+    value: 0.45
+    unit: ratio
+    reason: Simplified upper-tier support projection as fraction of base.
+    confidence: low
+    evidence:
+    - M09
+    iteration: G1-01
+  upper_pinnacle_width:
+    value: 1.1
+    unit: m
+    reason: Corner turret silhouette; no sculptural geometry yet.
+    confidence: low
+    evidence:
+    - M10
+    - M09
+    iteration: G1-01
+  upper_pinnacle_top:
+    value: 51.5
+    unit: m
+    reason: Major corner-turret tip level below helm base in P07/M10.
+    confidence: medium
+    evidence:
+    - P07
+    - M10
+    iteration: G1-01
+  upper_pinnacle_shaft_top:
+    value: 47.0
+    unit: m
+    reason: Coarse corner turret shoulder prior to taper.
+    confidence: low
+    evidence:
+    - M10
+    iteration: G1-01
+  west_gable_top:
+    value: 32.0
+    unit: m
+    reason: Simplified central west gable matches main nave roof ridge; detailed stepped
+      outline deferred.
+    confidence: medium
+    evidence:
+    - M10
+    - M14
+    - P07
+    iteration: G1-01
+  west_front_depth:
+    value: 0.8
+    unit: m
+    reason: Coarse west front plate thickness for outer volume.
+    confidence: low
+    evidence:
+    - P01
+    - M10
+    iteration: G1-01
+  sacristy_x_min:
+    value: 6.0
+    unit: m
+    reason: Inner edge of NE sacristy footprint from P01 relative to crossing.
+    confidence: medium
+    evidence:
+    - P01
+    - M16
+    iteration: G1-01
+  sacristy_x_max:
+    value: 17.3
+    unit: m
+    reason: Outer east edge of sacristy footprint from P01.
+    confidence: medium
+    evidence:
+    - P01
+    - M16
+    iteration: G1-01
+  sacristy_y_min:
+    value: 6.0
+    unit: m
+    reason: Inner edge of NE sacristy footprint in re-entrant corner.
+    confidence: medium
+    evidence:
+    - P01
+    - M16
+    iteration: G1-01
+  sacristy_y_max:
+    value: 15.6
+    unit: m
+    reason: Northern outer edge of NE annex from P01 and M15.
+    confidence: medium
+    evidence:
+    - P01
+    - M15
+    iteration: G1-01
+  sacristy_eave:
+    value: 13.7
+    unit: m
+    reason: Two-storey annex eaves around two-thirds of main wall height in M15/M16.
+    confidence: medium
+    evidence:
+    - M15
+    - M16
+    iteration: G1-01
+  sacristy_roof_top:
+    value: 20.7
+    unit: m
+    reason: Pyramidal annex roof peak below main eaves from M15/M16/M17.
+    confidence: medium
+    evidence:
+    - M15
+    - M16
+    - M17
+    iteration: G1-01
+  north_stair_center_x:
+    value: -7.0
+    unit: m
+    reason: Round stair at nave/N-conch re-entrant corner from P01.
+    confidence: medium
+    evidence:
+    - P01
+    - P08
+    iteration: G1-01
+  north_stair_center_y:
+    value: 10.9
+    unit: m
+    reason: Approximate re-entrant stair position from P01.
+    confidence: medium
+    evidence:
+    - P01
+    iteration: G1-01
+  north_stair_radius:
+    value: 1.6
+    unit: m
+    reason: Round stair outer radius from P01, simplified.
+    confidence: low
+    evidence:
+    - P01
+    - P08
+    iteration: G1-01
+  north_stair_top:
+    value: 24.8
+    unit: m
+    reason: Round stair rises just above main eaves in P08.
+    confidence: low
+    evidence:
+    - P08
+    - M01
+    iteration: G1-01
+  roof_rider_radius:
+    value: 1.6
+    unit: m
+    reason: Octagonal crossing roof-rider radius inferred from modern silhouettes,
+      not historical lantern ornament.
+    confidence: medium
+    evidence:
+    - M02
+    - M05
+    - M18
+    iteration: G1-01
+  roof_rider_body_top:
+    value: 38.0
+    unit: m
+    reason: Lower closed roof-rider stage above main ridge.
+    confidence: low
+    evidence:
+    - M02
+    - M05
+    iteration: G1-01
+  roof_rider_lantern_top:
+    value: 41.5
+    unit: m
+    reason: Open lantern stage top inferred from modern M02/M05; detail deferred.
+    confidence: low
+    evidence:
+    - M02
+    - M05
+    iteration: G1-01
+  roof_rider_top:
+    value: 56.0
+    unit: m
+    reason: Modern slender roof-rider top inferred relative to roofs/towers. Historical
+      P02/P08 lantern differs.
+    confidence: low
+    evidence:
+    - M02
+    - M05
+    - M18
+    iteration: G1-01
+  roof_rider_post_width:
+    value: 0.25
+    unit: m
+    reason: Eight coarse lantern supports visible as silhouette only.
+    confidence: low
+    evidence:
+    - M02
+    - M05
+    iteration: G1-01
+  roof_rider_trim:
+    value: 0.15
+    unit: m
+    reason: Simple roof-rider roof/lantern overhang; trim profiles deferred.
+    confidence: low
+    evidence:
+    - M05
+    iteration: G1-01
+  side_roof_inner_edge:
+    value: 3.2
+    unit: m
+    reason: Transverse aisle roofs extend under the main roof to meet its slope around
+      27 m, rather than ending above the central eaves; P08 cross-section and M01
+      junction topology.
+    confidence: medium
+    evidence:
+    - P08
+    - P02
+    - M01
+    iteration: G1-03
+  camera_val_w_position_x:
+    value: -97.554864
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: &id001
+    - M10
+    - M11
+    iteration: G1-04
+  camera_val_w_position_y:
+    value: -21.08616
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id001
+    iteration: G1-04
+  camera_val_w_position_z:
+    value: 0.5
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id001
+    iteration: G1-04
+  camera_val_w_target_x:
+    value: -11.607075
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id001
+    iteration: G1-04
+  camera_val_w_target_y:
+    value: 6.960733
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id001
+    iteration: G1-04
+  camera_val_w_target_z:
+    value: 43.235808
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id001
+    iteration: G1-04
+  camera_val_w_lens:
+    value: 45.585841
+    unit: mm
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id001
+    iteration: G1-04
+  camera_val_w_roll:
+    value: -0.222047
+    unit: deg
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id001
+    iteration: G1-04
+  camera_val_sw_position_x:
+    value: -56.123224
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: &id002
+    - M09
+    iteration: G1-04
+  camera_val_sw_position_y:
+    value: -16.978537
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id002
+    iteration: G1-04
+  camera_val_sw_position_z:
+    value: 2.997616
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id002
+    iteration: G1-04
+  camera_val_sw_target_x:
+    value: -6.979006
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id002
+    iteration: G1-04
+  camera_val_sw_target_y:
+    value: 33.846181
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id002
+    iteration: G1-04
+  camera_val_sw_target_z:
+    value: 73.720271
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id002
+    iteration: G1-04
+  camera_val_sw_lens:
+    value: 39.366353
+    unit: mm
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id002
+    iteration: G1-04
+  camera_val_sw_roll:
+    value: 1.984308
+    unit: deg
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id002
+    iteration: G1-04
+  camera_val_s_position_x:
+    value: -30.0
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: &id003
+    - M05
+    - M04
+    iteration: G1-04
+  camera_val_s_position_y:
+    value: -60.0
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id003
+    iteration: G1-04
+  camera_val_s_position_z:
+    value: 1.882708
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id003
+    iteration: G1-04
+  camera_val_s_target_x:
+    value: 18.770724
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id003
+    iteration: G1-04
+  camera_val_s_target_y:
+    value: 20.662616
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id003
+    iteration: G1-04
+  camera_val_s_target_z:
+    value: 35.273707
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id003
+    iteration: G1-04
+  camera_val_s_lens:
+    value: 55.503452
+    unit: mm
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id003
+    iteration: G1-04
+  camera_val_s_roll:
+    value: 2.864789
+    unit: deg
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id003
+    iteration: G1-04
+  camera_val_se_position_x:
+    value: 80.318891
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: &id004
+    - M02
+    - M03
+    - M19
+    iteration: G1-04
+  camera_val_se_position_y:
+    value: -60.292071
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id004
+    iteration: G1-04
+  camera_val_se_position_z:
+    value: 0.5
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id004
+    iteration: G1-04
+  camera_val_se_target_x:
+    value: -0.687828
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id004
+    iteration: G1-04
+  camera_val_se_target_y:
+    value: -7.941511
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id004
+    iteration: G1-04
+  camera_val_se_target_z:
+    value: 26.907012
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id004
+    iteration: G1-04
+  camera_val_se_lens:
+    value: 43.684793
+    unit: mm
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id004
+    iteration: G1-04
+  camera_val_se_roll:
+    value: 2.606049
+    unit: deg
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id004
+    iteration: G1-04
+  camera_val_n_position_x:
+    value: -20.0
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: &id005
+    - M06
+    - M07
+    iteration: G1-04
+  camera_val_n_position_y:
+    value: 51.184641
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id005
+    iteration: G1-04
+  camera_val_n_position_z:
+    value: 0.5
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id005
+    iteration: G1-04
+  camera_val_n_target_x:
+    value: -42.160099
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id005
+    iteration: G1-04
+  camera_val_n_target_y:
+    value: -35.354001
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id005
+    iteration: G1-04
+  camera_val_n_target_z:
+    value: 45.444337
+    unit: m
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id005
+    iteration: G1-04
+  camera_val_n_lens:
+    value: 38.174484
+    unit: mm
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id005
+    iteration: G1-04
+  camera_val_n_roll:
+    value: 4.680819
+    unit: deg
+    reason: Approximate photo-camera parameter, not an architectural dimension. Hand-picked
+      silhouette landmarks with 36 mm horizontal sensor convention; target encodes
+      view direction at arbitrary 100 m distance. See validation/cameras.json, landmarks.yaml
+      and camera_history.json.
+    confidence: low
+    evidence: *id005
+    iteration: G1-04

@@ -49,6 +49,20 @@ Large Blender and 3D binary artifacts are prepared for Git LFS.
 
 ## Local workflow
 
+Goal 1 is implemented: [coarse Blender scene](blender/scene/elisabethkirche.blend),
+[review findings](validation/reports/goal-1.md) and
+[attributed photo comparisons](validation/review/G1-04/README.md).
+Fetch the working scene with `git lfs pull`. Rebuild and render with:
+
+```bash
+python scripts/build_massing.py --render
+python scripts/make_massing_review.py
+```
+
+The review command needs downloaded references. Blender is discovered from PATH,
+`BLENDER`, or a Windows installation; `--blender` overrides discovery.
+Architectural detail/materials (#9) and final polish/export (#8) remain to be done.
+
 The reconstruction is prepared as [three long Goals](docs/goals.md): complete
 coarse exterior, architectural detail/materials, then final quality and delivery.
 The target is a visually convincing model; centimetre accuracy is not required.

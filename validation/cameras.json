@@ -1,0 +1,330 @@
+{
+  "coordinate_system": "X east, Y north, Z up; position and target in metres",
+  "projection_convention": "36 mm HORIZONTAL sensor, approximate independent fitting; presentation ground excluded from camera solution",
+  "cameras": {
+    "VAL_W": {
+      "position": [
+        -97.554864,
+        -21.08616,
+        0.5
+      ],
+      "target": [
+        -11.607075,
+        6.960733,
+        43.235808
+      ],
+      "lens_mm": 45.585841,
+      "evidence": [
+        "M10",
+        "M11"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_hand_landmark_fit",
+      "iteration": "G1-02",
+      "confidence": "medium",
+      "unit": "m",
+      "reason": "Independent pose fit to hand-picked silhouette/roof landmarks in M10; geometry unchanged. Landmarks and lens convention are approximate, not EXIF calibration.",
+      "roll_deg": -0.222047
+    },
+    "VAL_SW": {
+      "position": [
+        -56.123224,
+        -16.978537,
+        2.997616
+      ],
+      "target": [
+        -6.979006,
+        33.846181,
+        73.720271
+      ],
+      "lens_mm": 39.366353,
+      "evidence": [
+        "M09"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_hand_landmark_fit",
+      "iteration": "G1-02",
+      "confidence": "medium",
+      "unit": "m",
+      "reason": "Independent pose fit to hand-picked silhouette/roof landmarks in M09; geometry unchanged. Landmarks and lens convention are approximate, not EXIF calibration.",
+      "roll_deg": 1.984308
+    },
+    "VAL_S": {
+      "position": [
+        -30.0,
+        -60.0,
+        1.882708
+      ],
+      "target": [
+        18.770724,
+        20.662616,
+        35.273707
+      ],
+      "lens_mm": 55.503452,
+      "evidence": [
+        "M05",
+        "M04"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_hand_landmark_fit",
+      "iteration": "G1-04",
+      "confidence": "medium",
+      "unit": "m",
+      "reason": "Independent pose fit to hand-picked silhouette/roof landmarks in M05; geometry unchanged. Landmarks and lens convention are approximate, not EXIF calibration.",
+      "roll_deg": 2.864789
+    },
+    "VAL_S_M04": {
+      "position": [
+        -20,
+        -24,
+        1.7
+      ],
+      "target": [
+        -29,
+        -8,
+        36
+      ],
+      "lens_mm": 36,
+      "evidence": [
+        "M04"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-01",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Independent initial look-at view from photo perspective; not calibrated EXIF pose. Lens uses 36 mm horizontal sensor convention. Position/target are inferred camera parameters, not church measurements."
+    },
+    "VAL_SE": {
+      "position": [
+        80.318891,
+        -60.292071,
+        0.5
+      ],
+      "target": [
+        -0.687828,
+        -7.941511,
+        26.907012
+      ],
+      "lens_mm": 43.684793,
+      "evidence": [
+        "M02",
+        "M03",
+        "M19"
+      ],
+      "resolution": [
+        1400,
+        1156
+      ],
+      "status": "approximate_hand_landmark_fit",
+      "iteration": "G1-02",
+      "confidence": "medium",
+      "unit": "m",
+      "reason": "Independent pose fit to hand-picked silhouette/roof landmarks in M02; geometry unchanged. Landmarks and lens convention are approximate, not EXIF calibration.",
+      "roll_deg": 2.606049
+    },
+    "VAL_N": {
+      "position": [
+        -20.0,
+        51.184641,
+        0.5
+      ],
+      "target": [
+        -42.160099,
+        -35.354001,
+        45.444337
+      ],
+      "lens_mm": 38.174484,
+      "evidence": [
+        "M06",
+        "M07"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_hand_landmark_fit",
+      "iteration": "G1-02",
+      "confidence": "medium",
+      "unit": "m",
+      "reason": "Independent pose fit to hand-picked silhouette/roof landmarks in M06; geometry unchanged. Landmarks and lens convention are approximate, not EXIF calibration.",
+      "roll_deg": 4.680819
+    },
+    "VAL_NNE_ROOF": {
+      "position": [
+        80,
+        110,
+        110
+      ],
+      "target": [
+        -10,
+        0,
+        35
+      ],
+      "lens_mm": 40,
+      "evidence": [
+        "M01"
+      ],
+      "resolution": [
+        1400,
+        1400
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-02",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Roof inspection framing expanded upward and outward after G1-01 clipped tower tips; not a photo camera solution."
+    },
+    "VAL_NE": {
+      "position": [
+        45,
+        46,
+        10
+      ],
+      "target": [
+        10,
+        10,
+        14
+      ],
+      "lens_mm": 42,
+      "evidence": [
+        "M16",
+        "M17"
+      ],
+      "resolution": [
+        1100,
+        1400
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-01",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Independent initial look-at view from photo perspective; not calibrated EXIF pose. Lens uses 36 mm horizontal sensor convention. Position/target are inferred camera parameters, not church measurements."
+    },
+    "VAL_PLAN": {
+      "position": [
+        -12,
+        0,
+        170
+      ],
+      "target": [
+        -12,
+        0,
+        0
+      ],
+      "lens_mm": 35,
+      "evidence": [
+        "P01"
+      ],
+      "resolution": [
+        1100,
+        1600
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-04",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Plan review camera oriented east upward and north left to match P01; orthographic inspection setting, not a photo fit.",
+      "type": "ORTHO",
+      "ortho_scale": 55,
+      "roll_deg": -90
+    },
+    "VAL_ELEV_S": {
+      "position": [
+        -12,
+        -160,
+        39
+      ],
+      "target": [
+        -12,
+        0,
+        39
+      ],
+      "lens_mm": 35,
+      "evidence": [
+        "P02",
+        "M02",
+        "M05"
+      ],
+      "resolution": [
+        1400,
+        1400
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-01",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Independent initial look-at view from photo perspective; not calibrated EXIF pose. Lens uses 36 mm horizontal sensor convention. Position/target are inferred camera parameters, not church measurements.",
+      "type": "ORTHO",
+      "ortho_scale": 98
+    },
+    "VAL_ELEV_W": {
+      "position": [
+        -180,
+        0,
+        40
+      ],
+      "target": [
+        -40,
+        0,
+        40
+      ],
+      "lens_mm": 35,
+      "evidence": [
+        "P07",
+        "M10"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-01",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Independent initial look-at view from photo perspective; not calibrated EXIF pose. Lens uses 36 mm horizontal sensor convention. Position/target are inferred camera parameters, not church measurements.",
+      "type": "ORTHO",
+      "ortho_scale": 65
+    },
+    "VAL_ELEV_E": {
+      "position": [
+        150,
+        0,
+        39
+      ],
+      "target": [
+        0,
+        0,
+        39
+      ],
+      "lens_mm": 35,
+      "evidence": [
+        "H01",
+        "M02"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-01",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Independent initial look-at view from photo perspective; not calibrated EXIF pose. Lens uses 36 mm horizontal sensor convention. Position/target are inferred camera parameters, not church measurements.",
+      "type": "ORTHO",
+      "ortho_scale": 65
+    }
+  }
+}

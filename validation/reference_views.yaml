@@ -1,19 +1,42 @@
 views:
   W:
     evidence: [M10, M11]
-    status: camera_to_be_solved
+    status: approximate_hand_landmark_fit
+    camera: VAL_W
   SW:
     evidence: [M09]
-    status: camera_to_be_solved
+    status: approximate_hand_landmark_fit
+    camera: VAL_SW
   S:
     evidence: [M04, M05]
-    status: camera_to_be_solved
+    status: approximate_hand_landmark_fit
+    camera: VAL_S
+    notes: "M05 is a partial close oblique; additional VAL_S_M04 is an uncalibrated diagnostic."
   SE:
     evidence: [M02, M03, M19]
-    status: camera_to_be_solved
+    status: approximate_hand_landmark_fit
+    camera: VAL_SE
   NE:
-    evidence: [M16, H03]
-    status: mixed_modern_historic
+    evidence: [M16, M17]
+    status: diagnostic_uncalibrated
+    camera: VAL_NE
   N:
     evidence: [M06, M07]
-    status: camera_to_be_solved
+    status: approximate_hand_landmark_fit
+    camera: VAL_N
+  NNE_ROOF:
+    evidence: [M01]
+    status: diagnostic_uncalibrated
+    camera: VAL_NNE_ROOF
+  PLAN:
+    evidence: [P01, P08]
+    status: orthographic_structural_check
+    camera: VAL_PLAN
+  ELEV_S:
+    evidence: [P02, P06]
+    status: orthographic_structural_check
+    camera: VAL_ELEV_S
+  ELEV_W:
+    evidence: [P07]
+    status: orthographic_structural_check
+    camera: VAL_ELEV_W

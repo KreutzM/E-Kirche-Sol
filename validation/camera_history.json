@@ -1,0 +1,328 @@
+[
+  {
+    "camera": "VAL_SE",
+    "iteration": "G1-02",
+    "previous": {
+      "position": [
+        75,
+        -60,
+        1.7
+      ],
+      "target": [
+        -11,
+        0,
+        30
+      ],
+      "lens_mm": 27,
+      "evidence": [
+        "M02",
+        "M03",
+        "M19"
+      ],
+      "resolution": [
+        1400,
+        1156
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-01",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Independent initial look-at view from photo perspective; not calibrated EXIF pose. Lens uses 36 mm horizontal sensor convention. Position/target are inferred camera parameters, not church measurements."
+    },
+    "reason": "Initial framing failed source landmark positions; refine perspective from recorded image landmarks, not to hide geometry discrepancies."
+  },
+  {
+    "camera": "VAL_W",
+    "iteration": "G1-02",
+    "previous": {
+      "position": [
+        -91,
+        -12,
+        1.7
+      ],
+      "target": [
+        -40.6,
+        0,
+        36
+      ],
+      "lens_mm": 40,
+      "evidence": [
+        "M10",
+        "M11"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-01",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Independent initial look-at view from photo perspective; not calibrated EXIF pose. Lens uses 36 mm horizontal sensor convention. Position/target are inferred camera parameters, not church measurements."
+    },
+    "reason": "Initial framing failed source landmark positions; refine perspective from recorded image landmarks, not to hide geometry discrepancies."
+  },
+  {
+    "camera": "VAL_SW",
+    "iteration": "G1-02",
+    "previous": {
+      "position": [
+        -54,
+        -34,
+        1.7
+      ],
+      "target": [
+        -39,
+        -7,
+        39
+      ],
+      "lens_mm": 42,
+      "evidence": [
+        "M09"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-01",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Independent initial look-at view from photo perspective; not calibrated EXIF pose. Lens uses 36 mm horizontal sensor convention. Position/target are inferred camera parameters, not church measurements."
+    },
+    "reason": "Initial framing failed source landmark positions; refine perspective from recorded image landmarks, not to hide geometry discrepancies."
+  },
+  {
+    "camera": "VAL_S",
+    "iteration": "G1-02",
+    "previous": {
+      "position": [
+        -8,
+        -42,
+        1.7
+      ],
+      "target": [
+        0,
+        -10,
+        24
+      ],
+      "lens_mm": 45,
+      "evidence": [
+        "M05",
+        "M04"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-01",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Independent initial look-at view from photo perspective; not calibrated EXIF pose. Lens uses 36 mm horizontal sensor convention. Position/target are inferred camera parameters, not church measurements."
+    },
+    "reason": "Initial framing failed source landmark positions; refine perspective from recorded image landmarks, not to hide geometry discrepancies."
+  },
+  {
+    "camera": "VAL_N",
+    "iteration": "G1-02",
+    "previous": {
+      "position": [
+        -13,
+        38,
+        1.7
+      ],
+      "target": [
+        -30,
+        9,
+        35
+      ],
+      "lens_mm": 36,
+      "evidence": [
+        "M06",
+        "M07"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_initial_evidence_view",
+      "iteration": "G1-01",
+      "confidence": "low",
+      "unit": "m",
+      "reason": "Independent initial look-at view from photo perspective; not calibrated EXIF pose. Lens uses 36 mm horizontal sensor convention. Position/target are inferred camera parameters, not church measurements."
+    },
+    "reason": "Initial framing failed source landmark positions; refine perspective from recorded image landmarks, not to hide geometry discrepancies."
+  },
+  {
+    "camera": "VAL_SE",
+    "iteration": "G1-02",
+    "previous": {
+      "position": [
+        25.0,
+        -96.815574,
+        0.5
+      ],
+      "target": [
+        -19.591161,
+        -12.165015,
+        29.584554
+      ],
+      "lens_mm": 40.577092,
+      "evidence": [
+        "M02",
+        "M03",
+        "M19"
+      ],
+      "resolution": [
+        1400,
+        1156
+      ],
+      "status": "approximate_hand_landmark_fit",
+      "iteration": "G1-02",
+      "confidence": "medium",
+      "unit": "m",
+      "reason": "Independent pose fit to hand-picked silhouette/roof landmarks in M02; geometry unchanged. Landmarks and lens convention are approximate, not EXIF calibration.",
+      "roll_deg": -4.015173
+    },
+    "reason": "Initial framing failed source landmark positions; refine perspective from recorded image landmarks, not to hide geometry discrepancies."
+  },
+  {
+    "camera": "VAL_S",
+    "iteration": "G1-02",
+    "previous": {
+      "position": [
+        -25,
+        -43,
+        1.7
+      ],
+      "target": [
+        0,
+        -10,
+        24
+      ],
+      "lens_mm": 45,
+      "evidence": [
+        "M05",
+        "M04"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_hand_landmark_fit",
+      "iteration": "G1-02",
+      "confidence": "medium",
+      "unit": "m",
+      "reason": "Independent pose fit to hand-picked silhouette/roof landmarks in M05; geometry unchanged. Landmarks and lens convention are approximate, not EXIF calibration.",
+      "roll_deg": 0
+    },
+    "reason": "Initial framing failed source landmark positions; refine perspective from recorded image landmarks, not to hide geometry discrepancies."
+  },
+  {
+    "camera": "VAL_N",
+    "iteration": "G1-02",
+    "previous": {
+      "position": [
+        -13,
+        38,
+        1.7
+      ],
+      "target": [
+        -30,
+        9,
+        35
+      ],
+      "lens_mm": 36,
+      "evidence": [
+        "M06",
+        "M07"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_hand_landmark_fit",
+      "iteration": "G1-02",
+      "confidence": "medium",
+      "unit": "m",
+      "reason": "Independent pose fit to hand-picked silhouette/roof landmarks in M06; geometry unchanged. Landmarks and lens convention are approximate, not EXIF calibration.",
+      "roll_deg": 0
+    },
+    "reason": "Initial framing failed source landmark positions; refine perspective from recorded image landmarks, not to hide geometry discrepancies."
+  },
+  {
+    "camera": "VAL_S",
+    "iteration": "G1-02",
+    "previous": {
+      "position": [
+        -30.0,
+        -35.0,
+        4.0
+      ],
+      "target": [
+        44.781692,
+        19.585721,
+        41.790179
+      ],
+      "lens_mm": 37.343323,
+      "evidence": [
+        "M05",
+        "M04"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_hand_landmark_fit",
+      "iteration": "G1-02",
+      "confidence": "medium",
+      "unit": "m",
+      "reason": "Independent pose fit to hand-picked silhouette/roof landmarks in M05; geometry unchanged. Landmarks and lens convention are approximate, not EXIF calibration.",
+      "roll_deg": 11.866153
+    },
+    "reason": "Initial framing failed source landmark positions; refine perspective from recorded image landmarks, not to hide geometry discrepancies."
+  },
+  {
+    "camera": "VAL_S",
+    "iteration": "G1-04",
+    "previous": {
+      "position": [
+        -30.0,
+        -51.164329,
+        0.5
+      ],
+      "target": [
+        25.623328,
+        22.306129,
+        39.334741
+      ],
+      "lens_mm": 50.317944,
+      "evidence": [
+        "M05",
+        "M04"
+      ],
+      "resolution": [
+        1000,
+        1500
+      ],
+      "status": "approximate_hand_landmark_fit",
+      "iteration": "G1-02",
+      "confidence": "medium",
+      "unit": "m",
+      "reason": "Independent pose fit to hand-picked silhouette/roof landmarks in M05; geometry unchanged. Landmarks and lens convention are approximate, not EXIF calibration.",
+      "roll_deg": 7.776653
+    },
+    "reason": "Initial framing failed source landmark positions; refine perspective from recorded image landmarks, not to hide geometry discrepancies."
+  },
+  {
+    "iteration": "G1-04",
+    "camera": "VAL_SE",
+    "reason": "Corrected mistaken landmark identification: M02 foreground right polygonal cap is east conch, not south conch. Refit camera from corrected evidence association; architecture was not moved to accommodate the mistake."
+  },
+  {
+    "iteration": "G1-04",
+    "camera": "VAL_S",
+    "reason": "Limited roll to +/- 2.865 degrees because the M05 roof rider is nearly upright. Previous unconstrained coarse landmark fit produced an implausible 14-degree lean. Residual increased intentionally; geometry unchanged."
+  }
+]

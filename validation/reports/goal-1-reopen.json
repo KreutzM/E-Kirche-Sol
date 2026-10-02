@@ -1,0 +1,33 @@
+{
+  "iteration": "G1-04",
+  "saved_scene_reopened": true,
+  "architectural_meshes": 60,
+  "closed_individual_meshes": true,
+  "required_collections": [
+    "MASSING",
+    "TOWERS",
+    "ROOFS",
+    "BUTTRESSES",
+    "OPENINGS",
+    "TRACERY",
+    "DETAIL",
+    "CAMERAS",
+    "REFERENCE"
+  ],
+  "cameras": 12,
+  "bounds_xyz_m": [
+    [
+      -47.20000076293945,
+      21.524526596069336
+    ],
+    [
+      -21.524526596069336,
+      21.524526596069336
+    ],
+    [
+      0.0,
+      80.0
+    ]
+  ],
+  "blender_version": "5.2.1 LTS"
+}

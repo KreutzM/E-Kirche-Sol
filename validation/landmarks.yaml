@@ -1,1 +1,421 @@
-landmarks: {}
+landmarks:
+  VAL_SE:
+    evidence_id: M02
+    image_aspect: 1.2096774193548387
+    annotation_method: Manual approximate pixel picks on a non-destructive resized
+      inspection image; image_uv normalized to original full image. No claimed photogrammetric
+      accuracy.
+    position_bounds:
+    - - 25
+      - -130
+      - 0.5
+    - - 160
+      - -25
+      - 4
+    points:
+    - name: south_tower_terminal
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 80
+      image_uv:
+      - 0.31666666666666665
+      - 0.05040322580645161
+      confidence: low
+      iteration: G1-02
+    - name: north_tower_terminal
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 80
+      image_uv:
+      - 0.44333333333333336
+      - 0.1310483870967742
+      confidence: low
+      iteration: G1-02
+    - name: crossing_roof_rider_tip
+      world_xyz:
+      - 0
+      - 0
+      - 56
+      image_uv:
+      - 0.6116666666666667
+      - 0.16733870967741934
+      confidence: low
+      iteration: G1-02
+    - name: east_conch_roof_ridge_end
+      world_xyz:
+      - 15.2
+      - 0
+      - 32
+      image_uv:
+      - 0.7483333333333333
+      - 0.3870967741935484
+      confidence: low
+      iteration: G1-02
+    - name: east_conch_front_eave
+      world_xyz:
+      - 21.2867617043
+      - 0
+      - 22
+      image_uv:
+      - 0.7466666666666667
+      - 0.5080645161290323
+      confidence: low
+      iteration: G1-02
+    - name: east_conch_front_ground
+      world_xyz:
+      - 21.2867617043
+      - 0
+      - 0
+      image_uv:
+      - 0.7416666666666667
+      - 0.9274193548387096
+      confidence: low
+      iteration: G1-02
+    - name: south_tower_core_ground
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 0
+      image_uv:
+      - 0.2783333333333333
+      - 0.9092741935483871
+      confidence: low
+      iteration: G1-02
+  VAL_W:
+    evidence_id: M10
+    image_aspect: 0.6666666666666666
+    annotation_method: Manual approximate pixel picks on a non-destructive resized
+      inspection image; image_uv normalized to original full image. No claimed photogrammetric
+      accuracy.
+    position_bounds:
+    - - -200
+      - -100
+      - 0.5
+    - - -48
+      - -1
+      - 4
+    points:
+    - name: north_tower_terminal
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 80
+      image_uv:
+      - 0.3516666666666667
+      - 0.09555555555555556
+      confidence: low
+      iteration: G1-02
+    - name: south_tower_terminal
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 80
+      image_uv:
+      - 0.5866666666666667
+      - 0.02666666666666667
+      confidence: low
+      iteration: G1-02
+    - name: north_helm_base
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 54
+      image_uv:
+      - 0.33
+      - 0.28444444444444444
+      confidence: low
+      iteration: G1-02
+    - name: south_helm_base
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 54
+      image_uv:
+      - 0.59
+      - 0.22111111111111112
+      confidence: low
+      iteration: G1-02
+    - name: north_upper_gallery
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 44
+      image_uv:
+      - 0.31666666666666665
+      - 0.3888888888888889
+      confidence: low
+      iteration: G1-02
+    - name: south_upper_gallery
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 44
+      image_uv:
+      - 0.6133333333333333
+      - 0.3388888888888889
+      confidence: low
+      iteration: G1-02
+    - name: north_tower_core_ground
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 0
+      image_uv:
+      - 0.255
+      - 0.8966666666666666
+      confidence: low
+      iteration: G1-02
+    - name: south_tower_core_ground
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 0
+      image_uv:
+      - 0.6516666666666666
+      - 0.8966666666666666
+      confidence: low
+      iteration: G1-02
+  VAL_SW:
+    evidence_id: M09
+    image_aspect: 0.6622222222222223
+    annotation_method: Manual approximate pixel picks on a non-destructive resized
+      inspection image; image_uv normalized to original full image. No claimed photogrammetric
+      accuracy.
+    position_bounds:
+    - - -90
+      - -80
+      - 0.5
+    - - -46
+      - -15
+      - 4
+    points:
+    - name: north_tower_terminal
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 80
+      image_uv:
+      - 0.4211409395973154
+      - 0.18222222222222223
+      confidence: low
+      iteration: G1-02
+    - name: south_tower_terminal
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 80
+      image_uv:
+      - 0.6174496644295302
+      - 0.042222222222222223
+      confidence: low
+      iteration: G1-02
+    - name: north_helm_base
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 54
+      image_uv:
+      - 0.38926174496644295
+      - 0.28888888888888886
+      confidence: low
+      iteration: G1-02
+    - name: south_helm_base
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 54
+      image_uv:
+      - 0.6157718120805369
+      - 0.11333333333333333
+      confidence: low
+      iteration: G1-02
+    - name: north_upper_gallery
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 44
+      image_uv:
+      - 0.36073825503355705
+      - 0.37333333333333335
+      confidence: low
+      iteration: G1-02
+    - name: south_upper_gallery
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 44
+      image_uv:
+      - 0.6677852348993288
+      - 0.22555555555555556
+      confidence: low
+      iteration: G1-02
+  VAL_S:
+    evidence_id: M05
+    image_aspect: 0.6666666666666666
+    annotation_method: Manual approximate pixel picks on a non-destructive resized
+      inspection image; image_uv normalized to original full image. No claimed photogrammetric
+      accuracy.
+    position_bounds:
+    - - -30
+      - -60
+      - 0.5
+    - - -15
+      - -35
+      - 4
+    points:
+    - name: crossing_roof_rider_tip
+      world_xyz:
+      - 0
+      - 0
+      - 56
+      image_uv:
+      - 0.395
+      - 0.12
+      confidence: low
+      iteration: G1-02
+    - name: south_conch_roof_ridge_end
+      world_xyz:
+      - 0
+      - -15.2
+      - 32
+      image_uv:
+      - 0.6883333333333334
+      - 0.3333333333333333
+      confidence: low
+      iteration: G1-02
+    - name: south_conch_front_eave
+      world_xyz:
+      - 0
+      - -21.2867617043
+      - 22
+      image_uv:
+      - 0.6583333333333333
+      - 0.44555555555555554
+      confidence: low
+      iteration: G1-02
+    - name: south_conch_front_ground
+      world_xyz:
+      - 0
+      - -21.2867617043
+      - 0
+      image_uv:
+      - 0.6183333333333333
+      - 0.9088888888888889
+      confidence: low
+      iteration: G1-02
+    - name: roof_rider_body_top
+      world_xyz:
+      - 0
+      - 0
+      - 38
+      image_uv:
+      - 0.395
+      - 0.3433333333333333
+      confidence: low
+      iteration: G1-04
+    - name: roof_rider_lantern_top
+      world_xyz:
+      - 0
+      - 0
+      - 41.5
+      image_uv:
+      - 0.3933333333333333
+      - 0.31444444444444447
+      confidence: low
+      iteration: G1-04
+  VAL_N:
+    evidence_id: M06
+    image_aspect: 0.6666666666666666
+    annotation_method: Manual approximate pixel picks on a non-destructive resized
+      inspection image; image_uv normalized to original full image. No claimed photogrammetric
+      accuracy.
+    position_bounds:
+    - - -20
+      - 25
+      - 0.5
+    - - 5
+      - 60
+      - 4
+    points:
+    - name: north_tower_terminal
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 80
+      image_uv:
+      - 0.6966666666666667
+      - 0.07111111111111111
+      confidence: low
+      iteration: G1-02
+    - name: south_tower_terminal
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 80
+      image_uv:
+      - 0.6083333333333333
+      - 0.19111111111111112
+      confidence: low
+      iteration: G1-02
+    - name: north_helm_base
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 54
+      image_uv:
+      - 0.695
+      - 0.20555555555555555
+      confidence: low
+      iteration: G1-02
+    - name: north_upper_gallery
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 44
+      image_uv:
+      - 0.7166666666666667
+      - 0.3
+      confidence: low
+      iteration: G1-02
+    - name: north_tower_core_ground
+      world_xyz:
+      - -40.6
+      - 8.4
+      - 0
+      image_uv:
+      - 0.7416666666666667
+      - 0.88
+      confidence: low
+      iteration: G1-02
+    - name: nave_north_west_eave
+      world_xyz:
+      - -36
+      - 11.975
+      - 22
+      image_uv:
+      - 0.5166666666666667
+      - 0.49666666666666665
+      confidence: low
+      iteration: G1-02
+    - name: south_helm_base
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 54
+      image_uv:
+      - 0.595
+      - 0.32
+      confidence: low
+      iteration: G1-03
+    - name: south_upper_gallery
+      world_xyz:
+      - -40.6
+      - -8.4
+      - 44
+      image_uv:
+      - 0.5833333333333334
+      - 0.3888888888888889
+      confidence: low
+      iteration: G1-03

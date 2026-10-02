@@ -1,0 +1,30 @@
+{
+  "tower_tip_height": 80.0,
+  "exterior_hall_width": 23.95,
+  "interior_hall_proxy": 21.55,
+  "interior_transept_proxy": 39.173523408577964,
+  "interior_length_without_west_hall_proxy": 55.58676170428898,
+  "crossing_pitch_inferred": 10.9,
+  "wall_eave": 22.0,
+  "main_roof_ridge": 32.0,
+  "collections": [
+    {
+      "collection": "MASSING",
+      "objects": 7,
+      "closed_individual_meshes": true
+    },
+    {
+      "collection": "TOWERS",
+      "objects": 25,
+      "closed_individual_meshes": true
+    },
+    {
+      "collection": "ROOFS",
+      "objects": 28,
+      "closed_individual_meshes": true
+    }
+  ],
+  "cameras": 12,
+  "iteration": "G1-04",
+  "warning": "Interior proxies are rough scale cross-checks on solid massing, not measured or modeled interior surfaces."
+}

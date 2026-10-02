@@ -3,19 +3,19 @@ west:
   notes: "Multiple modern facade/portal/tower views."
 south:
   status: strong
-  notes: "Several modern and historic views."
+  notes: "Modern M04/M05 are close partial oblique views; M02/M03/M19 add full SE massing. No single clean full south elevation photograph. G1-04 reviewed."
 north:
   status: strong
-  notes: "Several modern and historic views plus sacristy."
+  notes: "M06/M07 show partial nave/tower views; M16/M17 show sacristy. Full unobscured north elevation remains unavailable. G1-04 reviewed."
 southeast_triconch:
   status: strong
   notes: "Multiple modern views including roof/choir detail."
 east:
   status: medium
-  notes: "Historic east view useful; modern direct east coverage remains a gap."
+  notes: "Historic east view useful; modern direct east coverage remains a gap. M02/M03/M19 constrain east cap obliquely; enough for coarse massing, fine east details remain uncertain."
 northeast:
   status: medium
   notes: "Sacristy and historic NE evidence available."
 roof:
   status: partial
-  notes: "Aerial/raised and local roof views exist; full roof coverage remains limited."
+  notes: "M01 elevated NNE view inspected, but original is only 600 px. M15/M16 and P02 supplement roof form. Hidden valleys and exact transverse roof rhythm require refinement; G1-04 inspection camera is not calibrated to M01."

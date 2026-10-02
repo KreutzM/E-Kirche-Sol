@@ -1,0 +1,341 @@
+{
+  "VAL_SE": {
+    "evidence_id": "M02",
+    "success": true,
+    "rms_image_fraction": 0.019687939041903302,
+    "landmarks": [
+      {
+        "name": "south_tower_terminal",
+        "observed_uv": [
+          0.31666666666666665,
+          0.05040322580645161
+        ],
+        "projected_uv": [
+          0.33309646487047784,
+          0.06417845779381992
+        ],
+        "error_uv": [
+          0.016429798203811186,
+          0.013775231987368311
+        ]
+      },
+      {
+        "name": "north_tower_terminal",
+        "observed_uv": [
+          0.44333333333333336,
+          0.1310483870967742
+        ],
+        "projected_uv": [
+          0.452131524886952,
+          0.11779603502812075
+        ],
+        "error_uv": [
+          0.008798191553618662,
+          -0.013252352068653439
+        ]
+      },
+      {
+        "name": "crossing_roof_rider_tip",
+        "observed_uv": [
+          0.6116666666666667,
+          0.16733870967741934
+        ],
+        "projected_uv": [
+          0.5901462920940735,
+          0.1474598111837182
+        ],
+        "error_uv": [
+          -0.02152037457259315,
+          -0.01987889849370114
+        ]
+      },
+      {
+        "name": "east_conch_roof_ridge_end",
+        "observed_uv": [
+          0.7483333333333333,
+          0.3870967741935484
+        ],
+        "projected_uv": [
+          0.7044805045106739,
+          0.3954957003889574
+        ],
+        "error_uv": [
+          -0.043852828822659395,
+          0.008398926195409051
+        ]
+      },
+      {
+        "name": "east_conch_front_eave",
+        "observed_uv": [
+          0.7466666666666667,
+          0.5080645161290323
+        ],
+        "projected_uv": [
+          0.7643828540321892,
+          0.5317868115123657
+        ],
+        "error_uv": [
+          0.017716187365522496,
+          0.02372229538333348
+        ]
+      },
+      {
+        "name": "east_conch_front_ground",
+        "observed_uv": [
+          0.7416666666666667,
+          0.9274193548387096
+        ],
+        "projected_uv": [
+          0.7689908918324757,
+          0.9267335357555591
+        ],
+        "error_uv": [
+          0.027324225165809013,
+          -0.0006858190831505739
+        ]
+      },
+      {
+        "name": "south_tower_core_ground",
+        "observed_uv": [
+          0.2783333333333333,
+          0.9092741935483871
+        ],
+        "projected_uv": [
+          0.270823858560307,
+          0.8957877262723525
+        ],
+        "error_uv": [
+          -0.007509474773026326,
+          -0.013486467276034642
+        ]
+      }
+    ],
+    "caveat": "Fit residual describes manually estimated correspondences on this coarse model; not independent geometric accuracy."
+  },
+  "VAL_S": {
+    "evidence_id": "M05",
+    "success": true,
+    "rms_image_fraction": 0.03702125589395407,
+    "landmarks": [
+      {
+        "name": "crossing_roof_rider_tip",
+        "observed_uv": [
+          0.395,
+          0.12
+        ],
+        "projected_uv": [
+          0.42525565601574933,
+          0.13351592050730143
+        ],
+        "error_uv": [
+          0.03025565601574931,
+          0.013515920507301438
+        ]
+      },
+      {
+        "name": "south_conch_roof_ridge_end",
+        "observed_uv": [
+          0.6883333333333334,
+          0.3333333333333333
+        ],
+        "projected_uv": [
+          0.5762828254361763,
+          0.32650401819417224
+        ],
+        "error_uv": [
+          -0.11205050789715709,
+          -0.006829315139161074
+        ]
+      },
+      {
+        "name": "south_conch_front_eave",
+        "observed_uv": [
+          0.6583333333333333,
+          0.44555555555555554
+        ],
+        "projected_uv": [
+          0.6692222354177677,
+          0.4524480764964768
+        ],
+        "error_uv": [
+          0.010888902084434382,
+          0.006892520940921243
+        ]
+      },
+      {
+        "name": "south_conch_front_ground",
+        "observed_uv": [
+          0.6183333333333333,
+          0.9088888888888889
+        ],
+        "projected_uv": [
+          0.6613772866818035,
+          0.9153900933183536
+        ],
+        "error_uv": [
+          0.04304395334847022,
+          0.00650120442946478
+        ]
+      },
+      {
+        "name": "roof_rider_body_top",
+        "observed_uv": [
+          0.395,
+          0.3433333333333333
+        ],
+        "projected_uv": [
+          0.401861424284244,
+          0.33613989833270175
+        ],
+        "error_uv": [
+          0.0068614242842439666,
+          -0.007193435000631576
+        ]
+      },
+      {
+        "name": "roof_rider_lantern_top",
+        "observed_uv": [
+          0.3933333333333333,
+          0.31444444444444447
+        ],
+        "projected_uv": [
+          0.4066991176885093,
+          0.2942392840136665
+        ],
+        "error_uv": [
+          0.013365784355175991,
+          -0.02020516043077797
+        ]
+      }
+    ],
+    "caveat": "Fit residual describes manually estimated correspondences on this coarse model; not independent geometric accuracy."
+  },
+  "VAL_N": {
+    "evidence_id": "M06",
+    "success": true,
+    "rms_image_fraction": 0.03326472559057381,
+    "landmarks": [
+      {
+        "name": "north_tower_terminal",
+        "observed_uv": [
+          0.6966666666666667,
+          0.07111111111111111
+        ],
+        "projected_uv": [
+          0.6837618346473378,
+          0.05050392169364065
+        ],
+        "error_uv": [
+          -0.012904832019328905,
+          -0.02060718941747046
+        ]
+      },
+      {
+        "name": "south_tower_terminal",
+        "observed_uv": [
+          0.6083333333333333,
+          0.19111111111111112
+        ],
+        "projected_uv": [
+          0.5998389670384306,
+          0.17513231319758604
+        ],
+        "error_uv": [
+          -0.008494366294902633,
+          -0.015978797913525078
+        ]
+      },
+      {
+        "name": "north_helm_base",
+        "observed_uv": [
+          0.695,
+          0.20555555555555555
+        ],
+        "projected_uv": [
+          0.6858569428067982,
+          0.2198016094430073
+        ],
+        "error_uv": [
+          -0.009143057193201742,
+          0.01424605388745176
+        ]
+      },
+      {
+        "name": "north_upper_gallery",
+        "observed_uv": [
+          0.7166666666666667,
+          0.3
+        ],
+        "projected_uv": [
+          0.6868759981853524,
+          0.3021475821312043
+        ],
+        "error_uv": [
+          -0.029790668481314286,
+          0.0021475821312043064
+        ]
+      },
+      {
+        "name": "north_tower_core_ground",
+        "observed_uv": [
+          0.7416666666666667,
+          0.88
+        ],
+        "projected_uv": [
+          0.6939905995693623,
+          0.8770513445610317
+        ],
+        "error_uv": [
+          -0.04767606709730443,
+          -0.002948655438968273
+        ]
+      },
+      {
+        "name": "nave_north_west_eave",
+        "observed_uv": [
+          0.5166666666666667,
+          0.49666666666666665
+        ],
+        "projected_uv": [
+          0.6300776318862029,
+          0.501825263153696
+        ],
+        "error_uv": [
+          0.1134109652195362,
+          0.0051585964870293766
+        ]
+      },
+      {
+        "name": "south_helm_base",
+        "observed_uv": [
+          0.595,
+          0.32
+        ],
+        "projected_uv": [
+          0.5893222128584734,
+          0.3318949483581122
+        ],
+        "error_uv": [
+          -0.005677787141526558,
+          0.011894948358112167
+        ]
+      },
+      {
+        "name": "south_upper_gallery",
+        "observed_uv": [
+          0.5833333333333334,
+          0.3888888888888889
+        ],
+        "projected_uv": [
+          0.5844125235738213,
+          0.40507872891545194
+        ],
+        "error_uv": [
+          0.0010791902404879705,
+          0.01618984002656304
+        ]
+      }
+    ],
+    "caveat": "Fit residual describes manually estimated correspondences on this coarse model; not independent geometric accuracy."
+  }
+}
