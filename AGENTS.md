@@ -6,6 +6,19 @@ Reconstruct the **present-day EXTERIOR only** of the Elisabethkirche in Marburg 
 
 This is an independent GPT-6.1-Sol experiment.
 
+## Visual quality target
+
+The finished exterior must be visually convincing across principal viewpoints.
+Centimetre accuracy, survey-grade reconstruction and exact photogrammetric camera
+solutions are not required. Prioritise silhouette, proportions, characteristic
+architecture, roof forms, facade rhythm and credible materials. Keep metre-scale
+coherence and source/assumption traceability. Visually adequate approximations are
+allowed when documented; do not invent measurements or metadata.
+
+Use `docs/goals.md` for the three long work packages, completion criteria and
+continuation checkpoints. Execute related sub-issues within their parent Goal;
+an intermediate script, render or report alone does not complete a modeling Goal.
+
 ## Experimental isolation — mandatory
 
 Work only from evidence and files in this repository plus the original public sources referenced here.

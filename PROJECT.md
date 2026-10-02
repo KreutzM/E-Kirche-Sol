@@ -4,6 +4,12 @@
 
 Present-day **exterior** of the Elisabethkirche, Marburg.
 
+The primary acceptance target is an optically convincing exterior model, not
+centimetre accuracy. Silhouette, proportions, distinctive architecture and materials
+take priority over invisible fine detail or exact camera calibration. Documented
+scale anchors and explicit assumptions still keep the result metrically coherent
+and auditable. See `docs/goals.md` for the work packages and visual acceptance rubric.
+
 Out of scope for this phase:
 - interior architecture;
 - furnishings;

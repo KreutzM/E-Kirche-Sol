@@ -49,6 +49,10 @@ Large Blender and 3D binary artifacts are prepared for Git LFS.
 
 ## Local workflow
 
+The reconstruction is prepared as [three long Goals](docs/goals.md): complete
+coarse exterior, architectural detail/materials, then final quality and delivery.
+The target is a visually convincing model; centimetre accuracy is not required.
+
 See [the development guide](docs/development.md) for Windows setup, Blender commands,
 the assumption schema, verification and current limitations. Python commands work
 without Make; the optional Makefile exposes the same tasks. CI checks the dataset
