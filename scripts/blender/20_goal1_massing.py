@@ -11,7 +11,7 @@ INPUTS = json.loads(Path(sys.argv[sys.argv.index("--") + 1]).read_text(encoding=
 A = INPUTS["assumptions"]
 D = INPUTS["dimensions"]
 P = {name: record["value"] for name, record in A.items()}
-ITERATION = "G1-04"
+ITERATION = "G2-04" if INPUTS.get("architecture") else "G1-04"
 
 bpy.ops.object.select_all(action="SELECT")
 bpy.ops.object.delete(use_global=False)
@@ -236,6 +236,10 @@ for index, (x, y) in enumerate(ring(0, 0, rr)):
     box(f"Crossing_lantern_post_{index}", x - pw, x + pw, y - pw, y + pw, P["roof_rider_body_top"], P["roof_rider_lantern_top"], "ROOFS", ROOF, rider_keys)
 taper("Crossing_rider_spire", 0, 0, rr + P["roof_rider_trim"], 0, P["roof_rider_lantern_top"], P["roof_rider_top"], "ROOFS", ROOF, rider_keys)
 
+if INPUTS.get("architecture"):
+    import runpy
+    runpy.run_path(str(ROOT / "scripts/blender/30_exterior_architecture.py"))["build"](globals())
+
 # Non-architectural validation stage; its sizes are presentation settings.
 box("Validation_ground", -160, 160, -160, 160, -0.20, -0.02, "REFERENCE", GROUND)
 bpy.data.objects["Validation_ground"]["evidence_status"] = "presentation ground only"
@@ -247,9 +251,9 @@ scene["project"] = "Elisabethkirche Marburg — independent exterior massing"
 scene["axis_convention"] = "X east, Y north, Z up"
 scene["origin_definition"] = "centre of crossing at nominal floor level"
 scene["iteration"] = ITERATION
-scene["quality_stage"] = "Goal 1 coarse massing, openings/detail/material finish pending Goal 2"
+scene["quality_stage"] = "Goal 2 developed exterior" if INPUTS.get("architecture") else "Goal 1 coarse massing, openings/detail/material finish pending Goal 2"
 scene.render.engine = "CYCLES"
-scene.cycles.samples = 32
+scene.cycles.samples = 48 if INPUTS.get("architecture") else 32
 scene.cycles.use_denoising = True
 scene.world.color = (0.65, 0.65, 0.65)
 scene.world.use_nodes = True
@@ -317,7 +321,7 @@ for key, anchor in (("interior_hall_proxy", "hall_total_width"), ("interior_tran
     assert abs(metrics[key] - D[anchor]["value"]) / D[anchor]["value"] < 0.05, (key, metrics[key])
 report_dir = ROOT / "validation/reports"
 report_dir.mkdir(parents=True, exist_ok=True)
-(report_dir / "goal-1-build.json").write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
+(report_dir / ("goal-2-build.json" if INPUTS.get("architecture") else "goal-1-build.json")).write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
 print("MASSING CHECKS OK", metrics)
 if INPUTS["render"]:
     output = ROOT / "validation/renders" / ITERATION

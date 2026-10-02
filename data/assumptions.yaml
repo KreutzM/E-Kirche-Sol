@@ -904,3 +904,1177 @@ assumptions:
     confidence: low
     evidence: *id005
     iteration: G1-04
+  window_width:
+    value: 2.8
+    unit: m
+    reason: Hall paired lancet and rose openings visually sized within five roof bays;
+      visual inference, not measured.
+    confidence: low
+    evidence:
+    - M04
+    - M05
+    - M06
+    - P02
+    iteration: G2-01
+  window_lower_sill:
+    value: 3.3
+    unit: m
+    reason: Lower row above stone base, photographic proportion; visual inference,
+      not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    - M19
+    iteration: G2-01
+  window_lower_spring:
+    value: 8.0
+    unit: m
+    reason: Pointed lower opening spring relative to horizontal sill band; visual
+      inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    - P02
+    iteration: G2-01
+  window_upper_sill:
+    value: 12.1
+    unit: m
+    reason: Second row above interstorey cornice; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    - M19
+    iteration: G2-01
+  window_upper_spring:
+    value: 18.8
+    unit: m
+    reason: Upper arch spring below eave; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    - P02
+    iteration: G2-01
+  conch_window_width:
+    value: 2.5
+    unit: m
+    reason: Narrower openings fit five polygonal cap faces; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M02
+    - M18
+    - M19
+    iteration: G2-01
+  window_recess:
+    value: 0.42
+    unit: m
+    reason: Visible reveal depth approximate, not measured wall thickness; visual
+      inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    - M19
+    iteration: G2-01
+  window_border:
+    value: 0.28
+    unit: m
+    reason: Outer dressed stone arch band; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    - M19
+    iteration: G2-01
+  window_moulding_radius:
+    value: 0.075
+    unit: m
+    reason: Repeated slender archivolt profile approximation; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M05
+    - M12
+    - M16
+    iteration: G2-01
+  window_mullion_radius:
+    value: 0.07
+    unit: m
+    reason: Paired lancet and rose tracery visible at normal views; visual inference,
+      not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    - M19
+    iteration: G2-01
+  window_rose_radius_factor:
+    value: 0.29
+    unit: ratio
+    reason: Round rose above paired lancets in modern photos; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    - M18
+    iteration: G2-01
+  window_rose_drop_factor:
+    value: 0.43
+    unit: ratio
+    reason: Rose centre below pointed apex; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M18
+    - M19
+    iteration: G2-01
+  window_lancet_spring_factor:
+    value: 0.29
+    unit: ratio
+    reason: Paired lancet arches meet rose at approximate vertical proportion; visual
+      inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M18
+    iteration: G2-01
+  window_glass_thickness:
+    value: 0.035
+    unit: m
+    reason: Opaque reflective exterior glazing sheet proxy; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    - M16
+    iteration: G2-01
+  window_iron_radius:
+    value: 0.014
+    unit: m
+    reason: Fine horizontal iron bars and leadwork economical approximation; visual
+      inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    iteration: G2-01
+  window_iron_spacing:
+    value: 1.15
+    unit: m
+    reason: Visible horizontal divisions in large glazing; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    - M19
+    iteration: G2-01
+  buttress_width:
+    value: 1.05
+    unit: m
+    reason: Nave and cap projecting support face width; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    - M19
+    iteration: G2-01
+  buttress_depth:
+    value: 1.8
+    unit: m
+    reason: Coarse support projection refined from modern photos; visual inference,
+      not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    - M19
+    iteration: G2-01
+  buttress_base_width_factor:
+    value: 1.22
+    unit: ratio
+    reason: Wider stepped plinth; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    iteration: G2-01
+  buttress_middle_depth_factor:
+    value: 0.8
+    unit: ratio
+    reason: Support setbacks at horizontal window division; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    - M19
+    iteration: G2-01
+  buttress_upper_depth_factor:
+    value: 0.62
+    unit: ratio
+    reason: Narrow upper head below cornice; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M18
+    iteration: G2-01
+  buttress_first_step:
+    value: 3.0
+    unit: m
+    reason: Base plinth to lower support stage; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    iteration: G2-01
+  buttress_second_step:
+    value: 11.2
+    unit: m
+    reason: Main setback near interstorey band; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    - M19
+    iteration: G2-01
+  buttress_top:
+    value: 21.6
+    unit: m
+    reason: Support head just below eave; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M18
+    iteration: G2-01
+  buttress_weathering_drop:
+    value: 0.65
+    unit: m
+    reason: Sloping cap stones at stage setbacks; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    iteration: G2-01
+  cornice_mid_height:
+    value: 11.2
+    unit: m
+    reason: Continuous sill division between two rows; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    - M19
+    iteration: G2-01
+  cornice_depth:
+    value: 0.28
+    unit: m
+    reason: Projecting profiled horizontal ledge; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    iteration: G2-01
+  cornice_height:
+    value: 0.22
+    unit: m
+    reason: Cornice vertical thickness; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    iteration: G2-01
+  cornice_eave_depth:
+    value: 0.4
+    unit: m
+    reason: Strong moulded eave below slate; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M17
+    - M18
+    iteration: G2-01
+  plinth_height:
+    value: 1.05
+    unit: m
+    reason: Base masonry plinth; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    - M16
+    iteration: G2-01
+  plinth_depth:
+    value: 0.16
+    unit: m
+    reason: Base projection; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    iteration: G2-01
+  gargoyle_length:
+    value: 1.35
+    unit: m
+    reason: Visible projecting drains above supports simplified to spouts; visual
+      inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M17
+    - M18
+    iteration: G2-01
+  gargoyle_width:
+    value: 0.25
+    unit: m
+    reason: Slender stone/metal drain silhouette; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M17
+    - M18
+    iteration: G2-01
+  gargoyle_height:
+    value: 0.3
+    unit: m
+    reason: Drain section economical approximation; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M17
+    - M18
+    iteration: G2-01
+  sacristy_window_width:
+    value: 2.6
+    unit: m
+    reason: Two bays per exposed face, pointed and quatrefoil windows; visual inference,
+      not measured.
+    confidence: low
+    evidence:
+    - M15
+    - M16
+    iteration: G2-01
+  sacristy_lower_sill:
+    value: 2.0
+    unit: m
+    reason: Lower annex windows above masonry plinth; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M16
+    iteration: G2-01
+  sacristy_lower_spring:
+    value: 4.0
+    unit: m
+    reason: Refined to keep lower arch head below annex division and upper glazing
+      clear of the cornice; M16 visual proportion, not measured.
+    confidence: low
+    evidence:
+    - M16
+    iteration: G2-04
+  sacristy_upper_sill:
+    value: 7.6
+    unit: m
+    reason: Refined to keep lower arch head below annex division and upper glazing
+      clear of the cornice; M16 visual proportion, not measured.
+    confidence: low
+    evidence:
+    - M16
+    iteration: G2-04
+  sacristy_upper_spring:
+    value: 10.5
+    unit: m
+    reason: Refined to keep lower arch head below annex division and upper glazing
+      clear of the cornice; M16 visual proportion, not measured.
+    confidence: low
+    evidence:
+    - M16
+    iteration: G2-04
+  sacristy_mid_band:
+    value: 6.7
+    unit: m
+    reason: Annex horizontal division; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M15
+    - M16
+    iteration: G2-01
+  sacristy_buttress_depth:
+    value: 1.25
+    unit: m
+    reason: Annex support projection; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M16
+    iteration: G2-01
+  sacristy_buttress_top:
+    value: 13.3
+    unit: m
+    reason: Support heads below annex eave; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M16
+    - M17
+    iteration: G2-01
+  tower_lower_sill:
+    value: 13.0
+    unit: m
+    reason: Low tower pointed opening level; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    - P07
+    iteration: G2-01
+  tower_lower_spring:
+    value: 19.0
+    unit: m
+    reason: Lower tower arch spring; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - P07
+    iteration: G2-01
+  tower_window_width:
+    value: 2.5
+    unit: m
+    reason: Slender belfry lancet opening; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M09
+    - M10
+    - M06
+    iteration: G2-01
+  tower_belfry_sill:
+    value: 27.0
+    unit: m
+    reason: Tall belfry starts above lower gallery; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M09
+    - M10
+    - M06
+    iteration: G2-01
+  tower_belfry_spring:
+    value: 40.0
+    unit: m
+    reason: Tall belfry spring below shoulder gallery; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M09
+    - M10
+    - M06
+    iteration: G2-01
+  tower_upper_sill:
+    value: 45.0
+    unit: m
+    reason: Upper pointed windows in octagonal stage; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    iteration: G2-01
+  tower_upper_spring:
+    value: 49.0
+    unit: m
+    reason: Upper pointed spring within gables; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    iteration: G2-01
+  tower_upper_window_width:
+    value: 2.1
+    unit: m
+    reason: Octagonal stage face opening; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    iteration: G2-01
+  tower_gallery_lower:
+    value: 24.0
+    unit: m
+    reason: Lower projecting gallery band; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M09
+    - M10
+    - P07
+    iteration: G2-01
+  tower_gallery_top:
+    value: 43.7
+    unit: m
+    reason: Main shoulder balustrade; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M09
+    - M10
+    - M11
+    iteration: G2-01
+  tower_gallery_depth:
+    value: 0.38
+    unit: m
+    reason: Strong projecting gallery cornice; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M09
+    - M10
+    iteration: G2-01
+  tower_gallery_height:
+    value: 0.35
+    unit: m
+    reason: Gallery slab thickness; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M09
+    - M10
+    iteration: G2-01
+  balustrade_height:
+    value: 0.9
+    unit: m
+    reason: Open stone traceried parapet; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M14
+    iteration: G2-01
+  balustrade_pitch:
+    value: 0.85
+    unit: m
+    reason: Simplified repeated quatrefoil/diamond units; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M14
+    iteration: G2-01
+  balustrade_bar_radius:
+    value: 0.055
+    unit: m
+    reason: Stone balustrade lattice profile; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M14
+    iteration: G2-01
+  tower_gable_base:
+    value: 50.0
+    unit: m
+    reason: Upper stone gables rise around helm base; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    iteration: G2-01
+  tower_gable_top:
+    value: 56.5
+    unit: m
+    reason: Gabled upper stage silhouette; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    iteration: G2-01
+  tower_gable_depth:
+    value: 0.3
+    unit: m
+    reason: Stone upper gable panel thickness; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    iteration: G2-01
+  spire_course_height:
+    value: 0.42
+    unit: m
+    reason: Stone helm course spacing visually approximate; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M09
+    - M10
+    iteration: G2-01
+  spire_joint_width:
+    value: 0.012
+    unit: m
+    reason: Stone helm shallow joint approximation; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M09
+    - M10
+    iteration: G2-01
+  west_facade_base_top:
+    value: 10.5
+    unit: m
+    reason: Portal storey beneath large west window; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    - P07
+    iteration: G2-01
+  west_main_window_sill:
+    value: 11.7
+    unit: m
+    reason: Main west tracery window above portal; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    - P07
+    iteration: G2-01
+  west_main_window_spring:
+    value: 18.0
+    unit: m
+    reason: Broad west pointed window; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    iteration: G2-01
+  west_main_window_width:
+    value: 5.8
+    unit: m
+    reason: Central four-light main west window; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    - P07
+    iteration: G2-01
+  west_central_eave:
+    value: 24.0
+    unit: m
+    reason: Flat connecting facade crest behind clock gable, correcting coarse full
+      triangle; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    - M14
+    iteration: G2-01
+  west_clock_sill:
+    value: 24.5
+    unit: m
+    reason: Clock gable glazing starts above lower gallery; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M10
+    - M14
+    iteration: G2-01
+  west_clock_spring:
+    value: 30.0
+    unit: m
+    reason: Clock pointed arch spring; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M14
+    iteration: G2-01
+  west_clock_window_width:
+    value: 2.5
+    unit: m
+    reason: Narrow central gabled clock window; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M14
+    - M10
+    iteration: G2-01
+  west_clock_gable_top:
+    value: 35.0
+    unit: m
+    reason: Central ornate gable tip distinctly below tower shoulders; visual inference,
+      not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M14
+    iteration: G2-01
+  west_clock_radius:
+    value: 1.0
+    unit: m
+    reason: Open dial circle on upper glazing; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M14
+    iteration: G2-01
+  portal_width:
+    value: 4.5
+    unit: m
+    reason: West door arch width including dark reveal; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M12
+    iteration: G2-01
+  portal_sill:
+    value: 0.12
+    unit: m
+    reason: Door base near nominal floor level; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M12
+    iteration: G2-01
+  portal_spring:
+    value: 5.5
+    unit: m
+    reason: Main pointed portal spring; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M12
+    - P03
+    iteration: G2-01
+  portal_moulding_count:
+    value: 4.0
+    unit: count
+    reason: Nested archivolts simplified from M12; visual inference, not measured.
+    confidence: medium
+    evidence:
+    - M12
+    - P03
+    iteration: G2-01
+  portal_moulding_pitch:
+    value: 0.18
+    unit: m
+    reason: Profile spacing across deep west jambs; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M12
+    iteration: G2-01
+  portal_door_top:
+    value: 5.3
+    unit: m
+    reason: Red paired doors below carved tympanum; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M12
+    - M13
+    iteration: G2-01
+  portal_trumeau_width:
+    value: 0.32
+    unit: m
+    reason: Central pier between doors; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M12
+    - M13
+    iteration: G2-01
+  portal_relief_depth:
+    value: 0.1
+    unit: m
+    reason: Economical low-relief foliage surface, not exact sculpture; visual inference,
+      not measured.
+    confidence: low
+    evidence:
+    - M12
+    - M13
+    iteration: G2-01
+  portal_figure_height:
+    value: 1.05
+    unit: m
+    reason: Central figure simplified silhouette rather than precise carving; visual
+      inference, not measured.
+    confidence: low
+    evidence:
+    - M13
+    iteration: G2-01
+  side_door_width:
+    value: 1.5
+    unit: m
+    reason: Small nave doors below lower windows; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    iteration: G2-01
+  side_door_top:
+    value: 2.65
+    unit: m
+    reason: Small nave portal height; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M06
+    iteration: G2-01
+  roof_edge_radius:
+    value: 0.055
+    unit: m
+    reason: Lead ridges and hip seams; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M17
+    - M18
+    iteration: G2-01
+  roof_tile_width:
+    value: 0.28
+    unit: m
+    reason: Architectural-scale slate unit approximation; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M17
+    - M18
+    iteration: G2-01
+  roof_tile_exposed_height:
+    value: 0.18
+    unit: m
+    reason: Visible staggered slate course approximation; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M17
+    - M18
+    iteration: G2-01
+  roof_tile_joint:
+    value: 0.004
+    unit: m
+    reason: Fine seams rather than broad mortar; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M17
+    - M18
+    iteration: G2-01
+  stone_block_width:
+    value: 0.85
+    unit: m
+    reason: Variable sandstone ashlar approximate typical length; visual inference,
+      not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M09
+    - M16
+    iteration: G2-01
+  stone_course_height:
+    value: 0.34
+    unit: m
+    reason: Visible sandstone courses at architectural scale; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M05
+    - M09
+    - M16
+    iteration: G2-01
+  stone_joint:
+    value: 0.012
+    unit: m
+    reason: Mortar seam width approximate; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M09
+    - M16
+    iteration: G2-01
+  stone_bump_depth:
+    value: 0.008
+    unit: m
+    reason: Subtle sandstone surface relief; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M09
+    - M16
+    iteration: G2-01
+  roof_bump_depth:
+    value: 0.006
+    unit: m
+    reason: Fine slate relief; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M17
+    - M18
+    iteration: G2-01
+  roof_dormer_width:
+    value: 0.85
+    unit: m
+    reason: Small roof ventilation dormers; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M17
+    - M18
+    iteration: G2-01
+  roof_dormer_height:
+    value: 0.9
+    unit: m
+    reason: Roof vent height; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M17
+    - M18
+    iteration: G2-01
+  roof_dormer_depth:
+    value: 0.6
+    unit: m
+    reason: Roof vent projection; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M17
+    - M18
+    iteration: G2-01
+  roof_dormer_level:
+    value: 25.0
+    unit: m
+    reason: Approximate small vent elevation on conch hips; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M18
+    iteration: G2-01
+  sacristy_dormer_level:
+    value: 16.8
+    unit: m
+    reason: Approximate small vent elevation on annex roof; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M17
+    iteration: G2-01
+  metal_cross_height:
+    value: 1.15
+    unit: m
+    reason: Small modern cap roof crosses and terminal ornaments; visual inference,
+      not measured.
+    confidence: low
+    evidence:
+    - M18
+    - M19
+    iteration: G2-01
+  metal_cross_width:
+    value: 0.75
+    unit: m
+    reason: Crossbar visual width; visual inference, not measured.
+    confidence: low
+    evidence:
+    - M18
+    iteration: G2-01
+  metal_rod_radius:
+    value: 0.045
+    unit: m
+    reason: Roof cross shaft and metal ornament approximation; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M18
+    iteration: G2-01
+  rider_embed_depth:
+    value: 2.5
+    unit: m
+    reason: Rider foot penetrates sloped roof rather than floating at ridge; visual
+      approximation, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M17
+    - M18
+    iteration: G2-03
+  roof_dormer_embed_depth:
+    value: 1.1
+    unit: m
+    reason: Vent body extends into roof for a continuous supporting junction; visual
+      approximation, not measured.
+    confidence: low
+    evidence:
+    - M17
+    - M18
+    iteration: G2-03
+  stair_roof_rise:
+    value: 1.8
+    unit: m
+    reason: Small coherent conical cap on reentrant turret, low-confidence hidden
+      silhouette; visual approximation, not measured.
+    confidence: low
+    evidence:
+    - M01
+    - P01
+    iteration: G2-03
+  stair_slit_width:
+    value: 0.28
+    unit: m
+    reason: Narrow stair light economical exterior approximation; visual approximation,
+      not measured.
+    confidence: low
+    evidence:
+    - M01
+    - M07
+    iteration: G2-03
+  stair_slit_height:
+    value: 1.0
+    unit: m
+    reason: Slit light height; visual approximation, not measured.
+    confidence: low
+    evidence:
+    - M01
+    - M07
+    iteration: G2-03
+  stair_slit_spacing:
+    value: 5.0
+    unit: m
+    reason: Regular stair lighting, uncertain details mostly occluded; visual approximation,
+      not measured.
+    confidence: low
+    evidence:
+    - M01
+    - M07
+    iteration: G2-03
+  crest_pinnacle_width:
+    value: 0.34
+    unit: m
+    reason: Slender stone pinnacles around clock gable; visual approximation, not
+      measured.
+    confidence: low
+    evidence:
+    - M14
+    - M10
+    iteration: G2-03
+  crest_pinnacle_rise:
+    value: 3.0
+    unit: m
+    reason: Clock gable flanking pinnacles; visual approximation, not measured.
+    confidence: low
+    evidence:
+    - M14
+    - M10
+    iteration: G2-03
+  crocket_radius:
+    value: 0.1
+    unit: m
+    reason: Simplified stone leaf knobs on gable slopes and pinnacles; visual approximation,
+      not measured.
+    confidence: low
+    evidence:
+    - M14
+    - M10
+    iteration: G2-03
+  crocket_pitch:
+    value: 0.65
+    unit: m
+    reason: Economical repeated gable leaf rhythm; visual approximation, not measured.
+    confidence: low
+    evidence:
+    - M14
+    - M10
+    iteration: G2-03
+  crest_side_gable_width:
+    value: 1.15
+    unit: m
+    reason: Small blind gables beside clock window; visual approximation, not measured.
+    confidence: low
+    evidence:
+    - M14
+    iteration: G2-03
+  crest_side_gable_height:
+    value: 2.4
+    unit: m
+    reason: Small gable heads below central pointed clock gable; visual approximation,
+      not measured.
+    confidence: low
+    evidence:
+    - M14
+    iteration: G2-03
+  crest_side_gable_sill:
+    value: 25.0
+    unit: m
+    reason: Blind panels above western gallery; visual approximation, not measured.
+    confidence: low
+    evidence:
+    - M14
+    iteration: G2-03
+  oculus_radius:
+    value: 0.4
+    unit: m
+    reason: Small blind upper gable oculus simplified; visual approximation, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    iteration: G2-03
+  oculus_height_above_base:
+    value: 1.8
+    unit: m
+    reason: Upper gable circle position; visual approximation, not measured.
+    confidence: low
+    evidence:
+    - M10
+    - M11
+    iteration: G2-03
+  detail_surround_projection:
+    value: 0.08
+    unit: m
+    reason: Small dressed stone profile face projection; visual approximation, not
+      measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    iteration: G2-03
+  detail_sill_projection:
+    value: 0.22
+    unit: m
+    reason: Window sill projects beyond wall; visual approximation, not measured.
+    confidence: low
+    evidence:
+    - M05
+    - M16
+    iteration: G2-03
+  portal_foliage_pitch:
+    value: 0.36
+    unit: m
+    reason: Abstract foliage repeat scaled from portal tympanum; visual approximation,
+      not measured.
+    confidence: low
+    evidence:
+    - M12
+    - M13
+    iteration: G2-03
+  portal_foliage_row_pitch:
+    value: 0.34
+    unit: m
+    reason: Abstract relief rows, no exact carved leaf claim; visual approximation,
+      not measured.
+    confidence: low
+    evidence:
+    - M12
+    - M13
+    iteration: G2-03
+  portal_foliage_radius:
+    value: 0.1
+    unit: m
+    reason: Simplified carved leaf motif span; visual approximation, not measured.
+    confidence: low
+    evidence:
+    - M12
+    - M13
+    iteration: G2-03
+  portal_iron_scroll_radius:
+    value: 0.022
+    unit: m
+    reason: Thin iron ornament profile on red doors; visual approximation, not measured.
+    confidence: low
+    evidence:
+    - M12
+    iteration: G2-03
+  tower_support_belt_low:
+    value: 8.5
+    unit: m
+    reason: Lower support course ledges visible in M09/M10; visual inference, not
+      measured.
+    confidence: low
+    evidence:
+    - M09
+    - M10
+    - P07
+    iteration: G2-04
+  tower_support_belt_middle:
+    value: 12.0
+    unit: m
+    reason: Projecting support band below low tower openings, M09/M10; visual inference,
+      not measured.
+    confidence: low
+    evidence:
+    - M09
+    - M10
+    - P07
+    iteration: G2-04

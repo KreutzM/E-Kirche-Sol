@@ -1,42 +1,55 @@
 # Reconstruction progress
 
-## Goal 1 delivered — 2026-10-02, G1-04
+## Goal 2 delivered — 2026-10-02, G2-04
 
-Goal 1 (#2 including #3–#7) reaches the coarse massing gate at visual level 2.
-The complete coarse exterior includes hall, triconch, westwork, both towers,
-primary roofs, sacristy and reentrant stair. Details/materials remain Goal 2 work.
-Working scene: `blender/scene/elisabethkirche.blend` (LFS). Delivery commit: the
-commit introducing this checkpoint; find it with
-`git log -1 --format=%H -- validation/reports/goal-1.md` after checkout.
+Issue #9 reaches the architectural development gate at visual level 3 under the
+normal whole-building viewing rubric. All principal neutral comparisons and the
+elevated roof/plan/elevation checks were generated and actually inspected.
+Report: `validation/reports/goal-2.md`. Review images and attribution:
+`validation/review/G2-04/README.md`. Working scene:
+`blender/scene/elisabethkirche.blend` (Git LFS).
 
-- 32/32 live licence-checked references downloaded; hashes/readability verified.
-- Five contact sheets and relevant individual evidence actually inspected.
-- Six source anchors unchanged; 51 architectural plus 40 camera assumptions.
-- Twelve renders and eleven attributed comparisons in `validation/review/G1-04/`.
-- `validation/reports/goal-1.md` records per-view scores, scale proxies, camera
-  limitations, corrections and remaining discrepancies.
-- Dataset validation, nine pipeline tests, compilation, fresh build and saved-scene
-  reopening verified. No external blocker or excluded-repository use.
+- Whole exterior developed: two-tier recessed glazing/tracery, buttresses/cornices,
+  tower belfries/gables/galleries, west portal and clock crest, annex and roof details.
+- Procedural metre-scale sandstone/slate, exterior glass, metal and red timber materials.
+- 214 explicit assumptions: 174 architecture, 40 camera parameters; six source anchors unchanged.
+- 117 blind opening recesses; saved-scene check confirms 0.42 m sample niche depth,
+  separate glazing and all twelve retained camera configurations.
+- Fresh Blender 5.2.1 LTS build, twelve renders, saved-scene verification, dataset
+  validation, nine pipeline tests, compilation and whitespace checks pass.
+- 1,460 closed individual meshes, 1,539 capped profile curves; z=0..80 m.
+- 32 reference hashes unchanged; no sibling reconstruction, external texture or
+  invented photo metadata used. No external blocker.
 
-## Reproduce and continue
+The delivery commit introduces `goal-2.md`; retrieve its identifier with
+`git log -1 --format=%H -- validation/reports/goal-2.md` after checkout.
+
+## Reproduce
 
 ```text
 git lfs pull
 python scripts/validate_dataset.py
-python scripts/build_massing.py --render
-python scripts/make_massing_review.py
+python scripts/build_massing.py --architecture --render
+python scripts/make_massing_review.py --goal 2
 python -m unittest discover -s tests -v
 ```
 
-Review generation needs downloaded references. Blender 5.2.1 LTS was used.
-Next: [Goal 2 / #9](https://github.com/KreutzM/E-Kirche-Sol/issues/9), characteristic
-buttresses and two-level openings first, then tower galleries/gables, roof junctions
-and stone/slate/glazing materials. Refine coarse masses as evidence warrants.
-Keep comparison cameras and record changes. Residuals: approximate N tower overlap,
-S perspective mismatch, simplified west gable/upper stages, rider junction/height,
-side-roof pitch/count and hidden east details. No modern direct east photo; M01 is
-small. Full findings are in the Goal-1 report.
+Review generation needs the original downloaded references. Omitting
+`--architecture` replaces the scene with the older coarse stage.
 
-Finally [Goal 3 / #8](https://github.com/KreutzM/E-Kirche-Sol/issues/8): final quality,
-GLB export, presentation renders and SOL-01 delivery. Goals 2 and 3 have not started.
-The finished-model visual target has not yet been reached.
+## Next: Goal 3 / #8
+
+[Issue #8](https://github.com/KreutzM/E-Kirche-Sol/issues/8) remains open: final neutral
+quality pass, usable GLB export with material handling, export reimport checks,
+five principal neutral and two presentation renders, reproducible delivery and SOL-01.
+No Goal-3 work has started. Check tiny physical junctions and normal-distance
+appearance without discarding the retained comparison cameras.
+
+Explicit approximations: generic stone aging/lead network, abstract portal figure
+and foliage, reduced crockets/finials/spout creatures, regularized cap facets and
+low-confidence stair lights. Photo poses remain approximate; no modern direct east
+photo exists, and M01 is small. These do not imply exact source agreement. See the
+Goal-2 report for per-view limits and acceptance reasoning.
+
+Goal 1 (#2, #3–#7) was delivered in `fdc46f5`; its report/comparisons remain retained.
+The working scene is now Goal 2. The entire final-delivery contract awaits #8.

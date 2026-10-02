@@ -75,6 +75,16 @@ Blender after the `.blend` filename. Optional landmark refitting requires
 `requirements-calibration.txt`; committed cameras reproduce without SciPy.
 Refitting changes camera configuration and appends a history record.
 
+For the developed exterior use `python scripts/build_massing.py --architecture --render`.
+The launcher calls the massing generator, then the independent parametric architecture
+module `30_exterior_architecture.py` before saving/rendering. All material textures
+are procedural and use metre-projected UVs; no external texture files are needed.
+`python scripts/make_massing_review.py --goal 2` writes attributed G2-04 comparisons.
+Run `96_verify_saved_exterior.py` with Blender on the saved scene to check all
+architectural collections, mesh closure, materials/UVs, camera stability and an
+actual wall/glass ray intersection inside a window niche. The older `95_*` checker
+is specifically for the 60-mesh Goal-1 baseline and does not apply to Goal 2.
+
 `data/assumptions.yaml` uses a mapping keyed by stable, descriptive names. Each
 inferred dimension requires `value` (finite number), `unit`, `reason`, `confidence`
 (`high`, `medium`, `low`), `evidence` (nonempty manifest-ID list) and `iteration`

@@ -17,6 +17,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--blender", help="Blender executable; otherwise BLENDER env, PATH or Windows installation")
     parser.add_argument("--render", action="store_true")
+    parser.add_argument("--architecture", action="store_true", help="build Goal-2 exterior architecture and materials")
     parser.add_argument("--views", nargs="+", help="render only these camera names (e.g. VAL_SE)")
     args = parser.parse_args()
     errors, _, _, _ = validate(ROOT)
@@ -33,7 +34,7 @@ def main():
     cameras_path = ROOT / "validation/cameras.json"
     inputs = {"dimensions": dims, "assumptions": assumptions,
               "cameras": json.loads(cameras_path.read_text(encoding="utf-8")),
-              "render": args.render, "views": args.views}
+              "render": args.render, "views": args.views, "architecture": args.architecture}
     path = ROOT / "tmp/goal1_inputs.json"
     path.parent.mkdir(exist_ok=True)
     path.write_text(json.dumps(inputs, ensure_ascii=False, indent=2), encoding="utf-8")

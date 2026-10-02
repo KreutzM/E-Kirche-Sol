@@ -41,4 +41,5 @@ Evaluate GPT-6.1-Sol on the same reconstruction problem from a clean evidence ba
 
 ## Current phase
 
-Phase A: validate references, establish coordinate/scale framework, and build coarse exterior massing.
+Phase B: developed exterior architecture and materials on the accepted coarse
+massing. Final multi-view polish/export and SOL-01 delivery follow in Goal 3 (#8).
