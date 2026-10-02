@@ -1,7 +1,7 @@
 from pathlib import Path
 import bpy
 
-ROOT = Path.cwd()
+ROOT = Path(__file__).resolve().parents[2]
 SCENE = ROOT/"blender"/"scene"/"elisabethkirche.blend"
 
 bpy.ops.object.select_all(action="SELECT")

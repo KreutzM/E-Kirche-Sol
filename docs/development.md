@@ -1,0 +1,108 @@
+# Development and readiness
+
+## Setup on Windows / PowerShell
+
+Run from the repository root. Python 3.11 or 3.12, Git LFS and Blender are the
+local prerequisites. Dataset validation and tests do not require Blender or a network.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe scripts/validate_dataset.py
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+git lfs version
+```
+
+On Linux/macOS use `.venv/bin/python` instead. Installing dependencies requires
+network access. CI installs the same requirements on Windows and Linux.
+
+## References
+
+```powershell
+.\.venv\Scripts\python.exe scripts/fetch_assets.py --priority 1 --max-width 2500
+.\.venv\Scripts\python.exe scripts/make_contact_sheets.py
+```
+
+Downloads query live Commons licence metadata; a missing or unaccepted licence is
+an error. Existing reference files are preserved and skipped, including on an
+`--originals` run. A skip does not certify provenance or recheck a licence.
+Metadata is append-only; the CSV reports the latest run. New records include the
+actual download URL, UTC download time and local SHA-256. The Commons SHA-1
+describes the original, which may differ from the downloaded thumbnail.
+Keep the metadata with any redistributed reference set, as required by the policy.
+Network/download errors cause a nonzero exit status. A partial successful run can
+be resumed with the same command. Do not alter references to fit geometry.
+
+## Blender
+
+If Blender is outside PATH, use its executable explicitly. Adjust this example to
+your installation:
+
+```powershell
+$blenderExe = 'C:\Program Files\Blender Foundation\Blender 5.2\blender.exe'
+& $blenderExe --background --factory-startup --python-exit-code 1 --python scripts/blender/00_scene_setup.py
+```
+
+Scene setup creates the neutral collections and saves
+`blender/scene/elisabethkirche.blend`; it replaces that working scene if it already
+exists. Run it only when intentionally creating/resetting the scene. Paths are
+resolved from script locations, independent of Blender's working directory.
+Use `--python-exit-code 1` so script failures fail automated commands.
+
+The scale-guide scaffold is a separate script; it currently does not save the
+scene by itself. Run setup and guides in one Blender invocation when needed:
+
+```powershell
+& $blenderExe --background --factory-startup --python-exit-code 1 --python scripts/blender/00_scene_setup.py --python scripts/blender/10_massing.py
+```
+
+Save explicitly afterwards if the guides should persist. There is no architectural
+mesh or solved camera yet. `90_validation.py` deliberately fails until `VAL_*`
+cameras exist. Do not claim silhouette validation of this scaffold.
+
+The hall-width guide follows Y (north-south), transverse to the east-west hall.
+These hidden wire guides represent documented scale anchors, not exterior surfaces.
+
+## Assumptions
+
+`data/assumptions.yaml` uses a mapping keyed by stable, descriptive names. Each
+inferred dimension requires `value` (finite number), `unit`, `reason`, `confidence`
+(`high`, `medium`, `low`), `evidence` (nonempty manifest-ID list) and `iteration`
+(nonempty identifier). Zero and negative coordinates are allowed. Documented
+dimensions retain their source IDs and interior/exterior scope.
+
+The validator checks these fields, source and view evidence links, all three axes,
+handedness and origin. It checks consistency of recorded data; it does not certify
+source accuracy, camera calibration or geometric agreement.
+
+## Before committing
+
+```powershell
+python scripts/validate_dataset.py
+python -m unittest discover -s tests -v
+python -m compileall -q scripts
+git diff --check
+git status --short
+```
+
+After geometry changes, also follow the full validation loop in `AGENTS.md` and
+record evidence comparisons, assumptions and unresolved discrepancies. The sibling
+reconstruction is excluded from all inspection and validation.
+
+## Readiness audit — 2026-10-02
+
+The local audit found Python 3.11.9, Git LFS 3.7.1 and Blender 5.2.1 LTS.
+Blender is installed outside PATH; the explicit executable command above works.
+The baseline contains 32 manifest references, six documented dimensions and no
+assumptions. No downloaded reference images were present during the audit.
+
+Dataset validation, nine offline regression tests, Python compilation and
+`git diff --check` passed. A Blender background smoke check in a temporary copy
+verified metric units, axes, required collections, hidden scale guides and the
+script-relative scene save. The final guide check also verifies that hall width
+lies on Y. No architectural geometry or cameras were added, no silhouette result
+is claimed, and no sibling repository was inspected.
+
+Live source accessibility, actual Commons downloads and visual evidence inspection
+remain tasks for the reference-acquisition/modeling phase. CI executes offline
+dataset and pipeline checks; it does not execute Blender or certify live licences.

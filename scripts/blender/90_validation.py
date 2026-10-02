@@ -1,7 +1,7 @@
 from pathlib import Path
 import bpy
 
-ROOT=Path.cwd()
+ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/"validation"/"renders"
 OUT.mkdir(parents=True,exist_ok=True)
 

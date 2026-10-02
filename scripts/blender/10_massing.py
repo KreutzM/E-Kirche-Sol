@@ -25,7 +25,8 @@ def guide_cube(name, size_xyz, location=(0, 0, 0)):
 
 # Documented / near-documented scale guides only.
 guide_cube("REF_crossing_10m", (10.0, 10.0, 0.10), (0, 0, 0.05))
-guide_cube("REF_hall_width_21_55m", (21.55, 0.10, 0.10), (0, 0, 0.15))
+# The hall runs east-west (X); its transverse width is north-south (Y).
+guide_cube("REF_hall_width_21_55m", (0.10, 21.55, 0.10), (0, 0, 0.15))
 guide_cube("REF_tower_height_80m", (0.10, 0.10, 80.0), (0, 0, 40.0))
 
 print("Created documented scale guides only; no reconstructed church geometry.")

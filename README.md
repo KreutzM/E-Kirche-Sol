@@ -27,11 +27,12 @@ See `EXPERIMENT.md`.
 ## Start here
 
 1. Read `AGENTS.md`.
-2. Read `PROJECT.md` and `EXPERIMENT.md`.
+2. Follow the reading order in `AGENTS.md`: `EXPERIMENT.md`, `PROJECT.md`, dimensions, manifest, evidence policy, assumptions, then relevant references.
 3. Validate the repository:
    ```bash
    python -m pip install -r requirements.txt
    python scripts/validate_dataset.py
+   python -m unittest discover -s tests -v
    ```
 4. Fetch Priority-1 references:
    ```bash
@@ -45,3 +46,10 @@ See `EXPERIMENT.md`.
 Large web images are not stored as ordinary Git objects. `scripts/fetch_assets.py` retrieves the curated Wikimedia Commons references and records current licence/provenance metadata.
 
 Large Blender and 3D binary artifacts are prepared for Git LFS.
+
+## Local workflow
+
+See [the development guide](docs/development.md) for Windows setup, Blender commands,
+the assumption schema, verification and current limitations. Python commands work
+without Make; the optional Makefile exposes the same tasks. CI checks the dataset
+and pipeline regression tests on Windows and Linux.
