@@ -1,0 +1,38 @@
+{
+  "file": "blender/exports/elisabethkirche_SOL-01.glb",
+  "source_components": 2999,
+  "export_batches": 19,
+  "materials": [
+    "Weathered sandstone ashlar \u2014 metre courses",
+    "Recess shadow / belfry interior",
+    "Slate roof \u2014 staggered metre scale courses",
+    "Dressed sandstone mouldings",
+    "Weathered blue grey exterior glazing",
+    "West portal red painted timber",
+    "Blackened iron leadwork",
+    "Weathered lead and copper flashings",
+    "Portal red sandstone low relief"
+  ],
+  "texture_swatches_metres": {
+    "Weathered sandstone ashlar \u2014 metre courses": [
+      6.8,
+      4.08
+    ],
+    "Slate roof \u2014 staggered metre scale courses": [
+      2.24,
+      2.16
+    ],
+    "Weathered blue grey exterior glazing": [
+      2,
+      2
+    ]
+  },
+  "embedded_textures": 6,
+  "axis_conversion": "glTF Y up; Blender (x,y,z) -> (x,z,-y)",
+  "excluded": [
+    "validation ground",
+    "cameras",
+    "lights"
+  ],
+  "material_limit": "Baked repeating patina/glass swatches approximate continuous procedural shading; geometry and metre UV scale retained."
+}

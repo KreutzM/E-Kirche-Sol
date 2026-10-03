@@ -1,0 +1,37 @@
+{
+  "glb_sha256": "69fdd8e8655ead7a9b92b4381b3403214f401645b07f3933272bee8b27cb9c4f",
+  "bytes": 20201684,
+  "fresh_process_import": true,
+  "batches": 19,
+  "source_components": 2999,
+  "vertices": 411989,
+  "triangles": 497144,
+  "bounds_xyz_m_after_import": [
+    [
+      -47.38999938964844,
+      23.32925796508789
+    ],
+    [
+      -23.32925796508789,
+      23.32925796508789
+    ],
+    [
+      0.0,
+      80.0
+    ]
+  ],
+  "embedded_images": 6,
+  "material_count": 9,
+  "textured_materials": [
+    "GLB_Slate roof \u2014 staggered metre scale courses",
+    "GLB_Weathered blue grey exterior glazing",
+    "GLB_Weathered sandstone ashlar \u2014 metre courses"
+  ],
+  "axis_and_metre_bounds_match_editable_scene": true,
+  "render_files_verified": 14,
+  "glb_review_renders": [
+    "validation/delivery/SOL-01/PRES_SE_GLB.png",
+    "validation/delivery/SOL-01/VAL_W_GLB.png"
+  ],
+  "blender_version": "5.2.1 LTS"
+}

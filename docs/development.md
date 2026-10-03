@@ -97,6 +97,18 @@ source accuracy, camera calibration or geometric agreement.
 
 ## Before committing
 
+Final delivery: `python scripts/build_massing.py --final` starts from factory
+settings and regenerates the complete model, 12 unchanged validation poses,
+2 presentation poses, procedural shaders, 14 full-resolution renders, baked
+portable materials and embedded GLB. It then launches independent Blender
+processes for saved-scene verification and GLB import/checks/two render views.
+All commands use `--python-exit-code 1`; a failed build or verification returns
+failure to the launcher. Blender 5.2.1 LTS is the tested version. The build is
+offline after Python dependencies/Blender are installed; Commons originals are
+needed only for `python scripts/make_massing_review.py --goal 3`.
+Delivered PNGs, `.blend` and GLB are in Git LFS; fetch with `git lfs pull`.
+See `validation/reports/SOL-01.md` and `blender/exports/README.md`.
+
 ```powershell
 python scripts/validate_dataset.py
 python -m unittest discover -s tests -v

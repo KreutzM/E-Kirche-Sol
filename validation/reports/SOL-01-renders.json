@@ -1,0 +1,114 @@
+{
+  "VAL_W": {
+    "path": "validation/delivery/SOL-01/VAL_W.png",
+    "resolution": [
+      1200,
+      1800
+    ],
+    "purpose": "neutral validation"
+  },
+  "VAL_SW": {
+    "path": "validation/delivery/SOL-01/VAL_SW.png",
+    "resolution": [
+      1200,
+      1800
+    ],
+    "purpose": "neutral validation"
+  },
+  "VAL_S": {
+    "path": "validation/delivery/SOL-01/VAL_S.png",
+    "resolution": [
+      1200,
+      1800
+    ],
+    "purpose": "neutral validation"
+  },
+  "VAL_S_M04": {
+    "path": "validation/delivery/SOL-01/VAL_S_M04.png",
+    "resolution": [
+      1200,
+      1800
+    ],
+    "purpose": "neutral validation"
+  },
+  "VAL_SE": {
+    "path": "validation/delivery/SOL-01/VAL_SE.png",
+    "resolution": [
+      1800,
+      1486
+    ],
+    "purpose": "neutral validation"
+  },
+  "VAL_N": {
+    "path": "validation/delivery/SOL-01/VAL_N.png",
+    "resolution": [
+      1200,
+      1800
+    ],
+    "purpose": "neutral validation"
+  },
+  "VAL_NNE_ROOF": {
+    "path": "validation/delivery/SOL-01/VAL_NNE_ROOF.png",
+    "resolution": [
+      1800,
+      1800
+    ],
+    "purpose": "neutral validation"
+  },
+  "VAL_NE": {
+    "path": "validation/delivery/SOL-01/VAL_NE.png",
+    "resolution": [
+      1414,
+      1800
+    ],
+    "purpose": "neutral validation"
+  },
+  "VAL_PLAN": {
+    "path": "validation/delivery/SOL-01/VAL_PLAN.png",
+    "resolution": [
+      1238,
+      1800
+    ],
+    "purpose": "neutral validation"
+  },
+  "VAL_ELEV_S": {
+    "path": "validation/delivery/SOL-01/VAL_ELEV_S.png",
+    "resolution": [
+      1800,
+      1800
+    ],
+    "purpose": "neutral validation"
+  },
+  "VAL_ELEV_W": {
+    "path": "validation/delivery/SOL-01/VAL_ELEV_W.png",
+    "resolution": [
+      1200,
+      1800
+    ],
+    "purpose": "neutral validation"
+  },
+  "VAL_ELEV_E": {
+    "path": "validation/delivery/SOL-01/VAL_ELEV_E.png",
+    "resolution": [
+      1200,
+      1800
+    ],
+    "purpose": "neutral validation"
+  },
+  "PRES_SE": {
+    "path": "validation/delivery/SOL-01/PRES_SE.png",
+    "resolution": [
+      2000,
+      1800
+    ],
+    "purpose": "presentation"
+  },
+  "PRES_NW": {
+    "path": "validation/delivery/SOL-01/PRES_NW.png",
+    "resolution": [
+      2000,
+      1800
+    ],
+    "purpose": "presentation"
+  }
+}

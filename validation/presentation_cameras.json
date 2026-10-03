@@ -1,0 +1,8 @@
+{
+  "purpose": "Independent presentation poses; not calibration, no architectural inference. Validation cameras unchanged.",
+  "lighting": "Same neutral stage as validation; Cycles 64 samples, AgX",
+  "cameras": {
+    "PRES_SE": {"position": [115, -145, 85], "target": [-13, 0, 34], "lens_mm": 52, "resolution": [2000, 1800]},
+    "PRES_NW": {"position": [-155, 120, 90], "target": [-15, 0, 35], "lens_mm": 52, "resolution": [2000, 1800]}
+  }
+}

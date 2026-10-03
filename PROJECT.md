@@ -41,5 +41,5 @@ Evaluate GPT-6.1-Sol on the same reconstruction problem from a clean evidence ba
 
 ## Current phase
 
-Phase B: developed exterior architecture and materials on the accepted coarse
-massing. Final multi-view polish/export and SOL-01 delivery follow in Goal 3 (#8).
+Phase C: final independent SOL-01 exterior delivery. See
+`validation/reports/SOL-01.md` for verification, artifact links and explicit limits.

@@ -4,7 +4,7 @@ import json
 import math
 import bpy
 import bmesh
-from mathutils import Vector
+from mathutils import Vector, Quaternion
 
 ROOT = Path(__file__).resolve().parents[2]
 scene = bpy.context.scene
@@ -12,7 +12,7 @@ required = ['MASSING','TOWERS','ROOFS','BUTTRESSES','OPENINGS','TRACERY','DETAIL
 assert scene.unit_settings.system == 'METRIC' and scene.unit_settings.scale_length == 1
 assert scene['axis_convention'] == 'X east, Y north, Z up'
 assert scene['origin_definition'] == 'centre of crossing at nominal floor level'
-assert scene['iteration'].startswith('G2-')
+assert scene['iteration'].startswith(('G2-', 'G3-'))
 for name in required:
     assert name in bpy.data.collections
     if name!='REFERENCE':assert bpy.data.collections[name].objects, name
@@ -36,7 +36,8 @@ coords=[obj.matrix_world @ v.co for obj in objects if obj.type=='MESH' for v in 
 bounds=[[min(v[i] for v in coords),max(v[i] for v in coords)] for i in range(3)]
 assert abs(bounds[2][0])<.01 and abs(bounds[2][1]-80)<.01,bounds
 config=json.loads((ROOT/'validation/cameras.json').read_text(encoding='utf-8'))['cameras']
-assert len(bpy.data.collections['CAMERAS'].objects)==len(config)==12
+validation_cameras=[o for o in bpy.data.collections['CAMERAS'].objects if o.name.startswith('VAL_')]
+assert len(validation_cameras)==len(config)==12
 for name,c in config.items():
     obj=bpy.data.objects[name]
     assert (obj.location-Vector(c['position'])).length<1e-4,(name,'camera moved')
@@ -44,6 +45,23 @@ for name,c in config.items():
     direction=(Vector(c['target'])-obj.location).normalized()
     actual=obj.rotation_euler.to_quaternion() @ Vector((0,0,-1))
     assert actual.dot(direction)>.99999,name
+    expected=direction.to_track_quat('-Z','Y') @ Quaternion((0,0,1),math.radians(c.get('roll_deg',0)))
+    # q and -q encode exactly the same rotation; Euler round trips may flip sign.
+    actual_quat=obj.rotation_euler.to_quaternion().normalized()
+    assert abs(expected.normalized().dot(actual_quat))>.999999,(name,'camera roll changed')
+    assert obj.data.type==c.get('type','PERSP') and obj.data.sensor_fit=='HORIZONTAL',name
+    assert abs(obj.data.sensor_width-36)<1e-4,name
+    assert abs(obj.data.ortho_scale-c.get('ortho_scale',100))<1e-4,name
+presentation_count=0
+if scene['iteration'].startswith('G3-'):
+    presentation=json.loads((ROOT/'validation/presentation_cameras.json').read_text(encoding='utf-8'))['cameras']
+    assert {o.name for o in bpy.data.collections['CAMERAS'].objects if o.name.startswith('PRES_')}==set(presentation)
+    for name,c in presentation.items():
+        obj=bpy.data.objects[name]
+        assert (obj.location-Vector(c['position'])).length<1e-4,name
+        assert abs(obj.data.lens-c['lens_mm'])<1e-4,name
+        assert obj['fit_status']=='presentation only; no source-photo solution',name
+    presentation_count=len(presentation)
 # Rays into a known regular nave opening: host wall alone must have a blind
 # recess, while the separate glass lies in front of its rear stone surface.
 hall=bpy.data.objects['Hall_exterior'];width=23.95/2
@@ -62,8 +80,10 @@ assert not any('_CUT' in o.name for o in bpy.data.objects),'temporary cutter ret
 result={'iteration':scene['iteration'],'saved_scene_reopened':True,
         'mesh_count':mesh_count,'profile_curve_count':curve_count,'closed_individual_meshes':True,
         'bounds_xyz_m':bounds,'camera_configs_unchanged':True,
+        'presentation_cameras_verified':presentation_count,
         'sample_niche_depth_m':round(location.y+width,4),'sample_glass_in_front_of_niche_back':True,
         'collections':{name:len(bpy.data.collections[name].objects) for name in required},
         'blender_version':bpy.app.version_string}
-(ROOT/'validation/reports/goal-2-reopen.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+report='SOL-01-reopen.json' if scene['iteration'].startswith('G3-') else 'goal-2-reopen.json'
+(ROOT/'validation/reports'/report).write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
 print('SAVED EXTERIOR VERIFIED',result)

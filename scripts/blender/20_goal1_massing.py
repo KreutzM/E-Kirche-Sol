@@ -11,7 +11,7 @@ INPUTS = json.loads(Path(sys.argv[sys.argv.index("--") + 1]).read_text(encoding=
 A = INPUTS["assumptions"]
 D = INPUTS["dimensions"]
 P = {name: record["value"] for name, record in A.items()}
-ITERATION = "G2-04" if INPUTS.get("architecture") else "G1-04"
+ITERATION = "G3-01" if INPUTS.get("final") else ("G2-04" if INPUTS.get("architecture") else "G1-04")
 
 bpy.ops.object.select_all(action="SELECT")
 bpy.ops.object.delete(use_global=False)
@@ -321,7 +321,7 @@ for key, anchor in (("interior_hall_proxy", "hall_total_width"), ("interior_tran
     assert abs(metrics[key] - D[anchor]["value"]) / D[anchor]["value"] < 0.05, (key, metrics[key])
 report_dir = ROOT / "validation/reports"
 report_dir.mkdir(parents=True, exist_ok=True)
-(report_dir / ("goal-2-build.json" if INPUTS.get("architecture") else "goal-1-build.json")).write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
+(report_dir / ("SOL-01-build.json" if INPUTS.get("final") else ("goal-2-build.json" if INPUTS.get("architecture") else "goal-1-build.json"))).write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
 print("MASSING CHECKS OK", metrics)
 if INPUTS["render"]:
     output = ROOT / "validation/renders" / ITERATION
@@ -334,3 +334,6 @@ if INPUTS["render"]:
         scene.render.filepath = str(output / f"{name}.png")
         bpy.ops.render.render(write_still=True)
         print("RENDERED", scene.render.filepath)
+if INPUTS.get("final"):
+    import runpy
+    runpy.run_path(str(ROOT / "scripts/blender/40_final_delivery.py"))["deliver"](globals())

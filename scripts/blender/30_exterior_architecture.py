@@ -552,7 +552,7 @@ def build(g):
         if obj.users_collection[0].name!='REFERENCE':
             obj['quality_stage']='developed exterior, approximate photo-based detail'
     import json
-    report=g['ROOT']/'validation/reports/goal-2-architecture.json'
+    report=g['ROOT']/('validation/reports/SOL-01-architecture.json' if g['INPUTS'].get('final') else 'validation/reports/goal-2-architecture.json')
     report.write_text(json.dumps({'iteration':g['ITERATION'],'windows':windows,
                       'window_count':len(windows),'material_names':[m.name for m in bpy.data.materials],
                       'camera_changes':False},indent=2)+'\n',encoding='utf-8')

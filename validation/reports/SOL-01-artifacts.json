@@ -1,0 +1,96 @@
+{
+  "iteration": "G3-01",
+  "reference_hashes_checked": 32,
+  "artifacts": [
+    {
+      "path": "blender/scene/elisabethkirche.blend",
+      "bytes": 2097998,
+      "sha256": "958ea6a52706165710d0bbed01c029d302230ec6269f8e303def3d53bf94c758"
+    },
+    {
+      "path": "blender/exports/elisabethkirche_SOL-01.glb",
+      "bytes": 20201684,
+      "sha256": "69fdd8e8655ead7a9b92b4381b3403214f401645b07f3933272bee8b27cb9c4f"
+    },
+    {
+      "path": "validation/delivery/SOL-01/PRES_NW.png",
+      "bytes": 3958183,
+      "sha256": "f215500b3402b79d30f08de078e976893a7d1f4603d3976fefc5ca390b75ff18"
+    },
+    {
+      "path": "validation/delivery/SOL-01/PRES_SE.png",
+      "bytes": 3854529,
+      "sha256": "27f856ec472d5714268e1f3ad71e76d7f9efde65964aa7ea3e95a1c102c952a3"
+    },
+    {
+      "path": "validation/delivery/SOL-01/PRES_SE_GLB.png",
+      "bytes": 3850602,
+      "sha256": "372bc765edb7992bdc3d7ec90851b59f7cd4f692143210c11b0c485c99c37b14"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_ELEV_E.png",
+      "bytes": 2312248,
+      "sha256": "81737fb263948c43c170cc8a3823f1f45a8b4b7855352bd124dcc2ba13e252df"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_ELEV_S.png",
+      "bytes": 3374097,
+      "sha256": "24a8a142d557f6007f9e1138b9c2ed6726a048507a68e825654d8d3b2fd0b28e"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_ELEV_W.png",
+      "bytes": 2368490,
+      "sha256": "cc3cd27be0f28e72ac5018f2cd52b721b711da8e7c88482b89a38a53c33f29b8"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_N.png",
+      "bytes": 2548514,
+      "sha256": "0c4701455530ec322c747c646f26168b14cbab7d3849a8a642c88c76db4b538a"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_NE.png",
+      "bytes": 3046931,
+      "sha256": "45d86c37ab1522026c96b69ab611c98d1b8eb04d853a3d7145b8829dcab5e220"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_NNE_ROOF.png",
+      "bytes": 3457884,
+      "sha256": "080e169593bd24a539779a78c14ffdb41591e35ce4c3d202ab2f4320b89a2f46"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_PLAN.png",
+      "bytes": 2587656,
+      "sha256": "09f9bca8e969f0b715877d5e2d19ed8881c36834af67157be15f7cd159b323dd"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_S.png",
+      "bytes": 2519010,
+      "sha256": "ef0a7aff918979da3d42dc964023c6300aec2ee14267072c7c05e823ab453e6e"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_S_M04.png",
+      "bytes": 2622088,
+      "sha256": "aa502fe7ecfb5943e503f51d1e078e3c627e502e7244f10fadc960b51d737236"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_SE.png",
+      "bytes": 2992442,
+      "sha256": "81a96aad95c6cbce94daf96a1db8a7be86c7f4e5337b3862b884c145b0ca4da1"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_SW.png",
+      "bytes": 2861539,
+      "sha256": "b8dedca31e3a9d4fa1894054d3d8a2973a4bc5371bf8a2bc95d5719a657ddb52"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_W.png",
+      "bytes": 2592405,
+      "sha256": "156adce0be0569672f1d11017f2c72e99f636b7c8beda337b4125fcc012d9886"
+    },
+    {
+      "path": "validation/delivery/SOL-01/VAL_W_GLB.png",
+      "bytes": 2588488,
+      "sha256": "5cf7466de9c2874847ec664fe94711d122e12d9f590746c34a1c85d00b0f3026"
+    }
+  ]
+}

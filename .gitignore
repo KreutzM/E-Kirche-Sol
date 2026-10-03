@@ -19,7 +19,9 @@ cache/
 tmp/
 
 validation/renders/
-blender/exports/
+blender/exports/*
+!blender/exports/elisabethkirche_SOL-01.glb
+!blender/exports/README.md
 
 .DS_Store
 Thumbs.db

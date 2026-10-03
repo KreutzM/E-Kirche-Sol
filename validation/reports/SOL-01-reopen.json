@@ -1,0 +1,37 @@
+{
+  "iteration": "G3-01",
+  "saved_scene_reopened": true,
+  "mesh_count": 1460,
+  "profile_curve_count": 1539,
+  "closed_individual_meshes": true,
+  "bounds_xyz_m": [
+    [
+      -47.38999938964844,
+      23.32925796508789
+    ],
+    [
+      -23.32925796508789,
+      23.32925796508789
+    ],
+    [
+      0.0,
+      80.0
+    ]
+  ],
+  "camera_configs_unchanged": true,
+  "presentation_cameras_verified": 2,
+  "sample_niche_depth_m": 0.42,
+  "sample_glass_in_front_of_niche_back": true,
+  "collections": {
+    "MASSING": 8,
+    "TOWERS": 41,
+    "ROOFS": 30,
+    "BUTTRESSES": 276,
+    "OPENINGS": 239,
+    "TRACERY": 1274,
+    "DETAIL": 1131,
+    "CAMERAS": 14,
+    "REFERENCE": 2
+  },
+  "blender_version": "5.2.1 LTS"
+}

@@ -49,22 +49,27 @@ Large Blender and 3D binary artifacts are prepared for Git LFS.
 
 ## Local workflow
 
-The [working Blender scene](blender/scene/elisabethkirche.blend) now includes
-Goal-2 architecture and procedural materials. See the
-[Goal-2 review](validation/reports/goal-2.md) and
-[attributed photo comparisons](validation/review/G2-04/README.md).
+The final [editable Blender scene](blender/scene/elisabethkirche.blend) and
+[self-contained GLB](blender/exports/elisabethkirche_SOL-01.glb) are delivered through
+Git LFS. See the [SOL-01 report](validation/reports/SOL-01.md),
+[full-resolution render gallery](validation/delivery/SOL-01/README.md) and
+[attributed photo comparisons](validation/review/G3-01/README.md).
+The [Goal-2 review](validation/reports/goal-2.md) remains the architectural baseline.
 The [Goal-1 massing review](validation/reports/goal-1.md) remains as the baseline.
 Fetch the working scene with `git lfs pull`. Rebuild and render with:
 
 ```bash
-python scripts/build_massing.py --architecture --render
-python scripts/make_massing_review.py --goal 2
+python scripts/build_massing.py --final
 ```
 
-The review command needs downloaded references. Blender is discovered from PATH,
+The single command regenerates the model, cameras, materials, 14 final renders,
+GLB and two reimport renders, then verifies the reopened scene and imported GLB.
+No reference downloads or network are needed for this build. Optional attributed
+comparisons: `python scripts/make_massing_review.py --goal 3` after fetching references.
+Blender is discovered from PATH,
 `BLENDER`, or a Windows installation; `--blender` overrides discovery.
 Omit `--architecture` only to rebuild the coarse stage; doing so replaces the
-working scene. Final polish/export and SOL-01 delivery are tracked in #8.
+working scene. Use `--final` to regenerate the delivered complete result.
 
 The reconstruction is prepared as [three long Goals](docs/goals.md): complete
 coarse exterior, architectural detail/materials, then final quality and delivery.

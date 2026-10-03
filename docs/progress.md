@@ -1,55 +1,70 @@
 # Reconstruction progress
 
-## Goal 2 delivered — 2026-10-02, G2-04
+## SOL-01 final delivery — 2026-10-03, G3-01
 
-Issue #9 reaches the architectural development gate at visual level 3 under the
-normal whole-building viewing rubric. All principal neutral comparisons and the
-elevated roof/plan/elevation checks were generated and actually inspected.
-Report: `validation/reports/goal-2.md`. Review images and attribution:
-`validation/review/G2-04/README.md`. Working scene:
-`blender/scene/elisabethkirche.blend` (Git LFS).
+The three reconstruction packages are implemented: Goal 1 #2 with #3–#7,
+Goal 2 #9 and final Goal 3 #8. Sources/assumptions and original geometry remain
+independent of the excluded sibling reconstruction. No external blocker or human
+modeling/export assistance was required.
 
-- Whole exterior developed: two-tier recessed glazing/tracery, buttresses/cornices,
-  tower belfries/gables/galleries, west portal and clock crest, annex and roof details.
-- Procedural metre-scale sandstone/slate, exterior glass, metal and red timber materials.
-- 214 explicit assumptions: 174 architecture, 40 camera parameters; six source anchors unchanged.
-- 117 blind opening recesses; saved-scene check confirms 0.42 m sample niche depth,
-  separate glazing and all twelve retained camera configurations.
-- Fresh Blender 5.2.1 LTS build, twelve renders, saved-scene verification, dataset
-  validation, nine pipeline tests, compilation and whitespace checks pass.
-- 1,460 closed individual meshes, 1,539 capped profile curves; z=0..80 m.
-- 32 reference hashes unchanged; no sibling reconstruction, external texture or
-  invented photo metadata used. No external blocker.
+Final report: [SOL-01.md](../validation/reports/SOL-01.md).
+Artifacts: [Blender](../blender/scene/elisabethkirche.blend),
+[GLB](../blender/exports/elisabethkirche_SOL-01.glb),
+[full-resolution gallery](../validation/delivery/SOL-01/README.md),
+[attributed comparisons](../validation/review/G3-01/README.md).
+The generated assets have a documented free licence and retained source attribution.
 
-The delivery commit introduces `goal-2.md`; retrieve its identifier with
-`git log -1 --format=%H -- validation/reports/goal-2.md` after checkout.
+- Full factory-startup `python scripts/build_massing.py --final` exits 0, including
+  fourteen neutral/presentation renders, portable texture baking/export,
+  independent saved-scene checks and fresh GLB import/two review renders.
+- Original G2-04 architecture retained after the final multi-view review. All
+  twelve validation configurations, including roll, are unchanged. Two presentation
+  cameras are separately documented; neutral lighting is retained.
+- Saved scene: 1,460 closed individual meshes, 1,539 capped profile curves,
+  nine required collections; bounds z=0..80 m. Real window niche sample remains
+  0.42 m with separate glazing in front of its rear stone surface.
+- Portable GLB: 20,201,684 bytes, 19 collection/material batches, 497,144 triangles,
+  nine materials and six embedded 1024² images. Bounds/axes/metres match on reimport.
+  All 2,999 components are accounted for by batch metadata.
+- Six source anchors, 214 assumptions (174 architecture, 40 camera scalars);
+  no new building dimension in this final delivery stage. All 32 reference hashes
+  unchanged. Dataset validation, nine pipeline tests and compilation pass.
+- Sixteen full-resolution PNGs and eleven attributed comparisons inspected;
+  visual level 3 across supported main/roof views at normal whole-building distance.
+  Runtime checks and artifact checksums are in `validation/reports/SOL-01-*.json`.
 
-## Reproduce
+## Reproduce and freeze
 
 ```text
 git lfs pull
-python scripts/validate_dataset.py
-python scripts/build_massing.py --architecture --render
-python scripts/make_massing_review.py --goal 2
-python -m unittest discover -s tests -v
+python scripts/build_massing.py --final
 ```
 
-Review generation needs the original downloaded references. Omitting
-`--architecture` replaces the scene with the older coarse stage.
+The build needs Blender and `requirements.txt`, but no original images or network
+after dependencies are installed. Optional attributed composites need downloaded
+references: `python scripts/make_massing_review.py --goal 3`.
 
-## Next: Goal 3 / #8
+The commit introducing `validation/reports/SOL-01.md` freezes the independently
+generated result; retrieve it with
+`git log --diff-filter=A -1 --format=%H -- validation/reports/SOL-01.md`.
+Issue #8 records the full commit identifier and publication verification after
+push. Blender/GLB/final PNGs are delivered through Git LFS; review JPEGs/report/code
+remain ordinary Git. Opening a pointer file without `git lfs pull` is insufficient.
 
-[Issue #8](https://github.com/KreutzM/E-Kirche-Sol/issues/8) remains open: final neutral
-quality pass, usable GLB export with material handling, export reimport checks,
-five principal neutral and two presentation renders, reproducible delivery and SOL-01.
-No Goal-3 work has started. Check tiny physical junctions and normal-distance
-appearance without discarding the retained comparison cameras.
+## Remaining documented limits
 
-Explicit approximations: generic stone aging/lead network, abstract portal figure
-and foliage, reduced crockets/finials/spout creatures, regularized cap facets and
-low-confidence stair lights. Photo poses remain approximate; no modern direct east
-photo exists, and M01 is small. These do not imply exact source agreement. See the
-Goal-2 report for per-view limits and acceptance reasoning.
+Generic stone aging/glazing lead network, abstract portal sculpture/foliage,
+reduced crockets/finials/drain creatures, regularized cap facets and low-confidence
+stair lights remain visual approximations. GLB patina repeats baked swatches rather
+than preserving a continuous world-space shader. Photo poses are approximate;
+there is no direct modern east reference, and M01's original is small. Overlapping
+exterior components do not provide a globally watertight model or usable interior.
+No centimetre accuracy or human final visual sign-off is claimed.
 
-Goal 1 (#2, #3–#7) was delivered in `fdc46f5`; its report/comparisons remain retained.
-The working scene is now Goal 2. The entire final-delivery contract awaits #8.
+There is no remaining reconstruction package in this experiment's three-Goal plan.
+Any comparison with the excluded sibling requires a separate user instruction
+after the independent freeze.
+
+Historical milestones: Goal 1 `fdc46f5`, Goal 2 `4cf68cd`; their reports and comparisons
+remain retained. Omitting `--final` and using the older coarse/build flags replaces
+the working scene with that earlier stage.
