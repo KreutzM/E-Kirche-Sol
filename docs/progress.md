@@ -1,5 +1,15 @@
 # Reconstruction progress
 
+## WEB-01 browser presentation — 2026-10-03
+
+The independent SOL-01 model now has a reproducible Three.js/TypeScript web
+presentation under [web/](../web/README.md). Lossless Meshopt reduces the GLB
+from 20.2 MB to 11.2 MB while retaining decoded geometry, textures and transforms.
+Web cameras/light are separate from the frozen reconstruction and its validation.
+Desktop and emulated mobile WebGL acceptance is documented in
+[WEB-01](../validation/reports/WEB-01.md). Pages deployment and public URL
+verification remain pending; do not equate local tests with published delivery.
+
 ## SOL-01 final delivery — 2026-10-03, G3-01
 
 The three reconstruction packages are implemented: Goal 1 #2 with #3–#7,

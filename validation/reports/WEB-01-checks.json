@@ -1,0 +1,111 @@
+{
+  "browser": "Headless Chrome with SwiftShader",
+  "mobile": "Pixel 7 emulation, touch and DPR; not physical-device measurement",
+  "stats": {
+    "startTime": "2026-10-03T09:12:47.555Z",
+    "duration": 148949.37900000002,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "Loads the actual model, changes views and exposes attribution/downloads",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 46535
+        }
+      ]
+    },
+    {
+      "title": "Mouse or touch rotates the camera; settled player stops rendering",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 20635
+        }
+      ]
+    },
+    {
+      "title": "Shared cameras and keyboard controls restore a useful view",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 9055
+        }
+      ]
+    },
+    {
+      "title": "Failed download retains poster and permits retry",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4111
+        }
+      ]
+    },
+    {
+      "title": "Loads the actual model, changes views and exposes attribution/downloads",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 40875
+        }
+      ]
+    },
+    {
+      "title": "Mouse or touch rotates the camera; settled player stops rendering",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 11370
+        }
+      ]
+    },
+    {
+      "title": "Shared cameras and keyboard controls restore a useful view",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 9435
+        }
+      ]
+    },
+    {
+      "title": "Failed download retains poster and permits retry",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4036
+        }
+      ]
+    }
+  ],
+  "asset_build": {
+    "source_sha256": "69fdd8e8655ead7a9b92b4381b3403214f401645b07f3933272bee8b27cb9c4f",
+    "web_sha256": "1e8bb12f0ad12576b75f8e203a2b88e29757d50b9db398c31198a4b5b288dfd0",
+    "source_bytes": 20201684,
+    "web_bytes": 11168184,
+    "decoded_fingerprint": "7f9bdf46515ec79acfcaa1e1dfbffb239b91fdfff602fd02dfcdfd317a7eee0c",
+    "exact_decoded_preservation": true,
+    "strategy": "Lossless Meshopt buffer compression; original textures, attributes, indices and scene transforms retained."
+  }
+}

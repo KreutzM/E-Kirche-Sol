@@ -79,3 +79,12 @@ See [the development guide](docs/development.md) for Windows setup, Blender comm
 the assumption schema, verification and current limitations. Python commands work
 without Make; the optional Makefile exposes the same tasks. CI checks the dataset
 and pipeline regression tests on Windows and Linux.
+
+## Interactive web player
+
+The [web player](web/README.md) presents the frozen SOL-01 exterior using Three.js,
+with desktop/touch navigation, architectural views, annotations, shareable cameras
+and original model downloads. Build with `cd web`, `npm ci`, `npm run build`.
+The Pages workflow tests and deploys the generated static site using actual LFS
+assets. Public URL after Pages activation: https://kreutzm.github.io/E-Kirche-Sol/.
+See the [web review](validation/reports/WEB-01.md) for current acceptance status.

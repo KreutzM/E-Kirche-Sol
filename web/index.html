@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#eeece6" />
+    <meta name="description" content="Die Elisabethkirche Marburg als unabhängig rekonstruiertes 3D-Modell. Architektur entdecken, Ansichten teilen und das Modell herunterladen." />
+    <title>Elisabethkirche Marburg · Architektur in 3D</title>
+  </head>
+  <body>
+    <main id="player" aria-label="Interaktives Außenmodell der Elisabethkirche">
+      <img id="poster" src="%BASE_URL%assets/poster.webp" alt="Südostansicht des rekonstruierten Außenmodells der Elisabethkirche" />
+      <div id="stage"></div>
+      <header><a class="brand" href="#"><span class="eyebrow">MARBURG · ARCHITEKTUR IN 3D</span><h1>Elisabethkirche</h1><span class="subtitle">Eine Annäherung an die gotische Silhouette</span></a><button id="info" aria-haspopup="dialog">Über das Modell <span aria-hidden="true">↗</span></button></header>
+      <div id="status" role="status" aria-live="polite"><span id="status-text">Modell wird geladen …</span><progress id="progress" max="100" value="0" aria-label="Ladefortschritt"></progress><button id="retry" hidden>Erneut laden</button></div>
+      <div id="hotspots" aria-label="Architektonische Besonderheiten" hidden></div>
+      <aside id="annotation" hidden><button id="close-annotation" aria-label="Hinweis schließen">×</button><strong></strong><p></p></aside>
+      <footer>
+        <nav id="views" aria-label="Ansichten"></nav>
+        <div class="tools" aria-label="Darstellung">
+          <button id="reset" title="Gesamtansicht wiederherstellen">Zurücksetzen</button>
+          <button id="rotate" aria-pressed="false">Rundgang</button>
+          <button id="light" aria-pressed="false">Warmes Licht</button>
+          <button id="details" aria-pressed="false">Infopunkte</button>
+          <button id="share">Ansicht teilen</button>
+          <button id="fullscreen">Vollbild</button>
+          <button id="help" aria-expanded="false" aria-controls="instructions">Bedienung</button>
+        </div>
+        <p id="instructions" hidden>Drehen: ziehen / ein Finger · Zoom: Mausrad / zwei Finger · Verschieben: rechte Maustaste / zwei Finger. Tastatur im Modell: Pfeile drehen, +/− zoomen, Umschalt + Pfeile verschieben, Home zurücksetzen.</p>
+        <div class="caption"><span>EXTERIOR STUDY / SOL–01</span><span id="view-label">Südost · Gesamtansicht</span></div>
+      </footer>
+    </main>
+    <dialog id="about" aria-labelledby="about-title">
+      <button id="close-info" aria-label="Informationen schließen">×</button>
+      <span class="eyebrow">DAS PROJEKT</span><h2 id="about-title">Architektur aus Quellen</h2>
+      <p>Dieses Außenmodell der Elisabethkirche in Marburg wurde unabhängig aus dokumentierten Maßen, historischen Plänen und heutigen Fotografien rekonstruiert.</p>
+      <p>Der Schwerpunkt liegt auf einer überzeugenden Silhouette, stimmigen Proportionen und charakteristischen Details. Es ist keine vermessungsgenaue Rekonstruktion. Innenräume sind nicht modelliert; feine Skulpturen und einzelne Ornamente sind vereinfacht.</p>
+      <p>Modellstand <strong>SOL–01</strong>. Die Webfassung nutzt komprimierte Geometrie und gebackene Materialien. Das Licht und die Ansichten dienen der Präsentation.</p>
+      <div class="links"><a href="https://github.com/KreutzM/E-Kirche-Sol/blob/main/validation/reports/SOL-01.md" target="_blank" rel="noopener">Rekonstruktionsbericht ↗</a><a href="https://github.com/KreutzM/E-Kirche-Sol/blob/main/sources/reference_audit.json" target="_blank" rel="noopener">Quellen & Bildnachweise ↗</a><a href="%BASE_URL%assets/elisabethkirche_SOL-01.glb" download>Originalmodell · GLB</a><a href="%BASE_URL%assets/elisabethkirche.blend" download>Bearbeitbare Szene · Blender</a></div>
+      <p class="credit">KreutzM — Elisabethkirche Marburg, unabhängiges GPT-6.1-Sol-Experiment SOL-01. <a href="https://github.com/KreutzM/E-Kirche-Sol/commit/26951760ea226b59758318c107e76a83845ed2a6" target="_blank" rel="noopener">Modellstand und Urheberschaft</a>. Modell, Materialien und Modellbilder: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Webanpassung: Kompression und interaktive Präsentation. <a href="%BASE_URL%assets/LICENSE.md">Vollständiger Lizenzhinweis</a> · <a href="%BASE_URL%assets/THIRD_PARTY_NOTICES.txt">Software-Lizenzen</a>.</p>
+    </dialog>
+    <noscript><p class="no-js">Für die interaktive 3D-Ansicht ist JavaScript erforderlich. Das Vorschaubild zeigt das fertige Modell.</p></noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
