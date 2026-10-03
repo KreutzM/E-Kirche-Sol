@@ -1,6 +1,6 @@
 # WEB-01 — interactive presentation of SOL-01
 
-Date: 2026-10-03. Status: published; final compressed-transfer progress fix pending.
+Date: 2026-10-03. Status: published; final visible-error-poster acceptance pending.
 
 ## Source integrity
 
@@ -55,6 +55,12 @@ contact and facade shading. See the [screenshot index](../review/WEB-01/README.m
   limit in each full screenshot review before the roof view. CI now uses regular
   Chromium headless and a ten-minute allowance for that complete visual review;
   no view, geometry, assertion or screenshot is removed.
+- [Run 37114098371](https://github.com/KreutzM/E-Kirche-Sol/actions/runs/37114098371)
+  successfully tested and deployed the compressed-transfer progress correction
+  at app commit `2cffe80`. Final screenshot review found the poster's stacking
+  order needed to be above the empty WebGL canvas; desktop/mobile failure and
+  retry tests now also verify those visible layers and capture the fallback.
+  Both targeted cases pass locally. Final deployment acceptance follows.
 - Successful [build/deployment 37113198257](https://github.com/KreutzM/E-Kirche-Sol/actions/runs/37113198257)
   published app commit `8daf11f`; all eight Linux browser cases passed. The public
   URL returns 200 and all eight desktop/mobile browser cases pass against it.

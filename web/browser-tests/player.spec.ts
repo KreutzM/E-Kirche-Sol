@@ -79,11 +79,17 @@ test('Shared cameras and keyboard controls restore a useful view', async ({ page
   await expect(page.locator('canvas')).toHaveAttribute('data-ready','true');
   await expect(page.locator('canvas')).toHaveAttribute('data-camera',new URL(shared).hash);
 });
-test('Failed download retains poster and permits retry', async ({ page }) => {
+test('Failed download retains poster and permits retry', async ({ page },testInfo) => {
   await page.route('**/church.web.glb',route=>route.fulfill({status:503,body:'Unavailable'}));
   await page.goto('./');
   await expect(page.getByRole('button',{name:'Erneut laden'})).toBeVisible();
   await expect(page.locator('#poster')).not.toHaveClass('loaded');
+  // The poster must actually cover the empty WebGL canvas, while the UI remains
+  // above it. A class-only check misses stacking-order failures.
+  const layers=await page.evaluate(()=>({poster:Number(getComputedStyle(document.querySelector('#poster')!).zIndex),stage:Number(getComputedStyle(document.querySelector('#stage')!).zIndex)||0,status:Number(getComputedStyle(document.querySelector('#status')!).zIndex)}));
+  expect(layers.poster).toBeGreaterThan(layers.stage);
+  expect(layers.status).toBeGreaterThan(layers.poster);
+  await page.screenshot({path:`../tmp/web-${testInfo.project.name}-error.png`});
   await page.unroute('**/church.web.glb');
   await page.getByRole('button',{name:'Erneut laden'}).click();
   await expect(page.locator('canvas')).toHaveAttribute('data-ready','true');

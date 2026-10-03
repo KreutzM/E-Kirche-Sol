@@ -13,6 +13,7 @@ Downscaled JPEG review copies; full PNGs are generated under `tmp/` and CI artif
 | Roof | [image](web-desktop-roof.jpg) | [image](web-mobile-roof.jpg) |
 | Portal | [image](web-desktop-portal.jpg) | [image](web-mobile-portal.jpg) |
 | Towers | [image](web-desktop-towers.jpg) | [image](web-mobile-towers.jpg) |
+| Failed download / poster | [image](web-desktop-error.jpg) | [image](web-mobile-error.jpg) |
 
 Compare architecture and materials with the frozen
 [GLB presentation render](../../delivery/SOL-01/PRES_SE_GLB.png).
