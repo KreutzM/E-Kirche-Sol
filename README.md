@@ -86,5 +86,5 @@ The [web player](web/README.md) presents the frozen SOL-01 exterior using Three.
 with desktop/touch navigation, architectural views, annotations, shareable cameras
 and original model downloads. Build with `cd web`, `npm ci`, `npm run build`.
 The Pages workflow tests and deploys the generated static site using actual LFS
-assets. Public URL after Pages activation: https://kreutzm.github.io/E-Kirche-Sol/.
+assets. [Open the published player](https://kreutzm.github.io/E-Kirche-Sol/).
 See the [web review](validation/reports/WEB-01.md) for current acceptance status.

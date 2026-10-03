@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-10-03T10:11:40.105Z",
+  "base": "https://kreutzm.github.io/E-Kirche-Sol/",
+  "allMatchCIArtifact": true,
+  "files": [
+    {
+      "path": "assets/build-manifest.json",
+      "bytes": 482,
+      "sha256": "5066a0b8ac344ba232f3bf663bc787d3cc34e52e405cf296edde4be64d61cda0",
+      "http": 200,
+      "contentType": "application/json; charset=utf-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "assets/church.web.glb",
+      "bytes": 11168184,
+      "sha256": "1e8bb12f0ad12576b75f8e203a2b88e29757d50b9db398c31198a4b5b288dfd0",
+      "http": 200,
+      "contentType": "model/gltf-binary",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "assets/elisabethkirche.blend",
+      "bytes": 2097998,
+      "sha256": "958ea6a52706165710d0bbed01c029d302230ec6269f8e303def3d53bf94c758",
+      "http": 200,
+      "contentType": "application/x-blender",
+      "contentEncoding": null
+    },
+    {
+      "path": "assets/elisabethkirche_SOL-01.glb",
+      "bytes": 20201684,
+      "sha256": "69fdd8e8655ead7a9b92b4381b3403214f401645b07f3933272bee8b27cb9c4f",
+      "http": 200,
+      "contentType": "model/gltf-binary",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "assets/index-C6Ok36qS.css",
+      "bytes": 4379,
+      "sha256": "3417ca6c823db11a5ca4c555f6c86ad45ecea15c888de595e0bd8d4b1237342e",
+      "http": 200,
+      "contentType": "text/css; charset=utf-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "assets/index-C9xrRkNr.js",
+      "bytes": 670887,
+      "sha256": "9a6c19700bffb201971d8e911b8b2c5b78d1dfbb5a94400e66df679db0a3bbde",
+      "http": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "assets/LICENSE.md",
+      "bytes": 1896,
+      "sha256": "1f37dca83a541a406b768debfb33baad7765a276739b9b568829da2809595dee",
+      "http": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "assets/poster.webp",
+      "bytes": 37526,
+      "sha256": "c36fde3e3f440ab669ccb0ad95a1665cb62316e5b656dcf23a8aef53699586a7",
+      "http": 200,
+      "contentType": "image/webp",
+      "contentEncoding": null
+    },
+    {
+      "path": "assets/THIRD_PARTY_NOTICES.txt",
+      "bytes": 2396,
+      "sha256": "1727187ebca311ad7661dbc8ed58b2d1bf8f5832ecbff32e69ebe4dda08b0e51",
+      "http": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "contentEncoding": "gzip"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4900,
+      "sha256": "35e85a5943ecce29ce4090bf59da2097b85d9d89d74ee7189f80cd044cec15b0",
+      "http": 200,
+      "contentType": "text/html; charset=utf-8",
+      "contentEncoding": "gzip"
+    }
+  ]
+}

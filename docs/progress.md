@@ -7,8 +7,12 @@ presentation under [web/](../web/README.md). Lossless Meshopt reduces the GLB
 from 20.2 MB to 11.2 MB while retaining decoded geometry, textures and transforms.
 Web cameras/light are separate from the frozen reconstruction and its validation.
 Desktop and emulated mobile WebGL acceptance is documented in
-[WEB-01](../validation/reports/WEB-01.md). Pages deployment and public URL
-verification remain pending; do not equate local tests with published delivery.
+[WEB-01](../validation/reports/WEB-01.md). The [live player](https://kreutzm.github.io/E-Kirche-Sol/)
+is published via Pages Actions. Eight checks pass on the public site and in Linux
+CI; all ten published files match the build artifact, including original downloads.
+Real RTX 3060 measurements show approximately 60 fps. Mobile touch/layout is
+emulated, with that performance limitation recorded. All SOL-01 artifacts remain
+unchanged. No delivery blocker remains.
 
 ## SOL-01 final delivery — 2026-10-03, G3-01
 

@@ -75,7 +75,8 @@ reject LFS pointers. In repository Settings → Pages, select **GitHub Actions**
 as the source. This administrative setting must be enabled once by a repository
 administrator; the default workflow token cannot create that setting.
 
-Expected URL: `https://kreutzm.github.io/E-Kirche-Sol/`.
+Live URL: `https://kreutzm.github.io/E-Kirche-Sol/` — final public acceptance is
+recorded in [WEB-01](../validation/reports/WEB-01.md).
 The base path is explicit in `vite.config.ts`. Deploy runs only on main;
 pull requests still build/test and upload a review artifact.
 
@@ -87,5 +88,5 @@ and retry, named/shared camera parsing, keyboard navigation, mouse/touch rotatio
 and stopped idle rendering. Screenshots and JSON reports are generated under
 `tmp/` and uploaded by CI. Visually review whole-building, west, roof, portal and
 tower views at desktop and portrait sizes against the SOL-01 delivery renders.
-Physical device framerate and final public URL acceptance remain separate from
-headless/emulated checks; record those limits candidly in the web review report.
+Real GPU measurements and public URL acceptance are recorded separately from
+headless/emulated checks. The completed review states those limits explicitly.

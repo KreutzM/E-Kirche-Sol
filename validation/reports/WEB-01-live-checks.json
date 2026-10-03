@@ -1,0 +1,103 @@
+{
+  "url": "https://kreutzm.github.io/E-Kirche-Sol/",
+  "application_commit": "59b65ac35c99e9c72a0ba77911c78a5f80d2bedb",
+  "ci_run": 37114727329,
+  "stats": {
+    "startTime": "2026-10-03T10:08:14.044Z",
+    "duration": 141658.203,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "Loads the actual model, changes views and exposes attribution/downloads",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 47374
+        }
+      ]
+    },
+    {
+      "title": "Mouse or touch rotates the camera; settled player stops rendering",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 15505
+        }
+      ]
+    },
+    {
+      "title": "Shared cameras and keyboard controls restore a useful view",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 7256
+        }
+      ]
+    },
+    {
+      "title": "Failed download retains poster and permits retry",
+      "project": "desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4615
+        }
+      ]
+    },
+    {
+      "title": "Loads the actual model, changes views and exposes attribution/downloads",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 41555
+        }
+      ]
+    },
+    {
+      "title": "Mouse or touch rotates the camera; settled player stops rendering",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 11686
+        }
+      ]
+    },
+    {
+      "title": "Shared cameras and keyboard controls restore a useful view",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 6991
+        }
+      ]
+    },
+    {
+      "title": "Failed download retains poster and permits retry",
+      "project": "mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4800
+        }
+      ]
+    }
+  ]
+}

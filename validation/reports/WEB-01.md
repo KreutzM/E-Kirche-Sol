@@ -1,87 +1,90 @@
-# WEB-01 — interactive presentation of SOL-01
+# WEB-01 — published interactive presentation of SOL-01
 
-Date: 2026-10-03. Status: published; final visible-error-poster acceptance pending.
+Date: 2026-10-03. Status: delivered and verified.
+
+Live player: https://kreutzm.github.io/E-Kirche-Sol/.
+Application commit: `59b65ac35c99e9c72a0ba77911c78a5f80d2bedb`.
+[Successful CI build and Pages deployment](https://github.com/KreutzM/E-Kirche-Sol/actions/runs/37114727329).
+The final documentation/verification-script commit does not change deployed assets.
 
 ## Source integrity
 
-Canonical geometry, dimensions, assumptions, references and frozen SOL-01 delivery
-files are unchanged. No sibling reconstruction was inspected. No architectural
-dimension was inferred for this player. Web cameras and lighting are independent
-presentation settings; photographic validation cameras remain unchanged.
+Canonical geometry, dimensions, assumptions, references and all 18 frozen SOL-01
+binary artifacts are unchanged. No sibling reconstruction was inspected. No new
+architectural dimension was inferred. Web presentation cameras/light are separate
+from photographic validation; the crossing origin and metre scale are retained.
+Blender `(east,north,up)` maps to glTF `(east,up,-north)`.
 
 Source GLB: 20,201,684 bytes,
 SHA-256 `69fdd8e8655ead7a9b92b4381b3403214f401645b07f3933272bee8b27cb9c4f`.
-Derived web GLB: 11,168,184 bytes,
+Web GLB: 11,168,184 bytes,
 SHA-256 `1e8bb12f0ad12576b75f8e203a2b88e29757d50b9db398c31198a4b5b288dfd0`.
-Lossless Meshopt saves 44.7%. A freshly decoded comparison checks all vertex/index
-data, texture bytes, node transforms and primitive/material associations; only
-cyclic permutations within a triangle are normalized, preserving its winding.
-No simplification, lossy texture compression or normal filtering was used.
+Lossless Meshopt saves 44.7%. Fresh decoding verifies vertex/index data, texture
+bytes, transforms and material properties/associations. Equivalent cyclic index
+rotation is normalized without reversing triangle winding. No simplification,
+quantization, lossy texture compression or normal filtering is used. Existing
+1024px baked textures and fine geometry are preserved. HTTP gzip reduces the
+observed transfer to approximately 4.0 MB. Progress uses decoded build size.
 
-## Presentation and acceptance
+## Plan acceptance
 
-German responsive interface, six views, orbital navigation, keyboard controls,
-optional rotation, daylight/warm light, architectural hotspots, full screen,
-URL camera sharing, loading/retry/poster fallback, source/license information and
-unchanged original GLB/Blender downloads are implemented. Camera constraints keep
-the viewer above the floor and near the building. Reduced motion disables
-transitions. Rendering pauses at rest and in hidden tabs; mobile uses reduced DPR
-and shadow resolution.
+| Requirement | Implementation and evidence |
+|---|---|
+| Reproducible web assets | Locked Node dependencies, master/poster/Blender hash guards, asset script, decoded geometry fingerprint and build manifest. Linux CI builds from actual LFS bytes. |
+| Convincing presentation | Six independent web poses, neutral/warm light, environment and ground shadow. Fourteen actual desktop/portrait screenshots including error fallback were inspected against SOL-01 presentation/west renders. |
+| Complete navigation | Live mouse/touch orbit, mouse wheel and two-finger zoom/pan, keyboard rotation/zoom/pan, Home/reset, camera bounds, smooth presets, optional rotation and full screen verified. |
+| Responsive and accessible UI | German responsive interface, keyboard focus, reduced motion, native information dialog, architectural portal hotspot, source/uncertainty/license information and share-link restoration verified. |
+| Loading and idle behaviour | Correct decoded-byte progress, visible poster above empty canvas, failed-download retry, stable idle frame count. Visibility-event pause/resume verified through simulated document visibility changes. |
+| Public publication | Pages Actions deployment succeeds; full desktop/mobile browser suite passes against the public URL; every published file matches the CI artifact byte-for-byte. Original GLB/Blender downloads are real binaries. |
 
-Visual reference: `validation/delivery/SOL-01/PRES_SE_GLB.png` and west delivery
-render. Web sandstone/slate/glazing preserve the baked source materials, silhouette
-and detail. The lighter neutral stage deliberately differs from the darker
-Blender stage; illumination is not a calibration or evidence adjustment.
-Initial review corrected flat lighting, overly close roof framing and a too-small
-portrait whole-building view. A current Three.js PCF shadow map provides ground
-contact and facade shading. See the [screenshot index](../review/WEB-01/README.md).
+The lighter neutral web stage intentionally differs from the darker Blender
+stage. It preserves sandstone/slate/glazing, silhouette and fine detail. Initial
+review corrected lighting, whole-building/roof framing, HTTP-compressed progress
+and poster layering. See the [review gallery](../review/WEB-01/README.md).
+No validation camera or evidence image was changed to conceal a discrepancy.
 
-## Verification and remaining work
+## Verification
 
-- Dataset validation: 32 references, 6 documented dimensions, 214 assumptions.
-- Existing Python suite: 9 tests pass.
-- Camera URL unit suite: 3 tests pass.
-- TypeScript check and Vite production build pass; npm audit reports no findings.
-- Browser suite: 8 production checks pass (four cases each on desktop/mobile),
-  including actual navigation gestures, clickable portal annotation, camera link
-  reload, idle frame counter stability and load-error recovery. See
-  [machine-readable results](WEB-01-checks.json).
-- Screenshots: desktop 1440×1000 and Pixel 7 portrait emulation, headless Chrome
-  with SwiftShader. These are actual WebGL images of the derived GLB.
-- Pixel 7 emulation exercises touch input, not a physical smartphone GPU.
-  SwiftShader frame rate is not used as a physical-device performance claim.
-- GitHub Pages is now activated with `build_type: workflow` via the recovered CLI
-  login. The first Linux browser run passed six cases but exhausted the two-minute
-  limit in each full screenshot review before the roof view. CI now uses regular
-  Chromium headless and a ten-minute allowance for that complete visual review;
-  no view, geometry, assertion or screenshot is removed.
-- [Run 37114098371](https://github.com/KreutzM/E-Kirche-Sol/actions/runs/37114098371)
-  successfully tested and deployed the compressed-transfer progress correction
-  at app commit `2cffe80`. Final screenshot review found the poster's stacking
-  order needed to be above the empty WebGL canvas; desktop/mobile failure and
-  retry tests now also verify those visible layers and capture the fallback.
-  Both targeted cases pass locally. Final deployment acceptance follows.
-- Successful [build/deployment 37113198257](https://github.com/KreutzM/E-Kirche-Sol/actions/runs/37113198257)
-  published app commit `8daf11f`; all eight Linux browser cases passed. The public
-  URL returns 200 and all eight desktop/mobile browser cases pass against it.
-  All ten published files match the CI artifact byte-for-byte, including both
-  original model downloads. A final progress-bar correction uses decoded size
-  from the build manifest when Pages compresses transfer bytes; its deployment
-  and final live acceptance still need verification.
-- Local real-GPU baseline: RTX 3060/D3D11, Chrome 153, desktop 1440×1000,
-  56.7 fps / 1.20 seconds to ready; emulated mobile 412×839 at render DPR 1.3,
-  56.6 fps. See [raw measurements](WEB-01-local-performance.json).
-- First public measurement: desktop 55.9 fps / 1.73 seconds to ready; emulated
-  mobile 56.0 fps / 1.02 seconds. Network transfer is approximately 4.0 MB thanks
-  to HTTP compression, while the decoded GLB remains 11.17 MB. These values are
-  observations on the named desktop GPU and network, not a phone performance claim.
+- Dataset: 32 references, 6 documented dimensions, 214 assumptions; validation passes.
+- Existing Python suite: 9 cases; final Windows/Linux CI succeeds.
+- Camera unit suite: 3 cases; TypeScript and Vite production build succeed.
+- Eight browser cases pass locally, in Linux CI and on the final public site.
+- [Live browser results](WEB-01-live-checks.json) record all eight successful cases.
+- [Published-file integrity](WEB-01-live-integrity.json) records all ten HTTP 200
+  files and matching SHA-256, including original downloads, poster and notices.
+- [Live GPU measurements and navigation](WEB-01-live-performance.json) record
+  full-screen entry/exit, wheel/pinch zoom, mouse/two-finger pan, keyboard zoom/pan,
+  reduced-motion switching, and the simulated visibility-event suspension/resume.
+- [Local GPU baseline](WEB-01-local-performance.json) is retained separately.
 
-## Software sources
+CI uses regular Chromium headless. Hosted software WebGL screenshot readback
+needs a longer allowance than local Chrome; the complete review has a ten-minute
+limit with every preset, screenshot and assertion retained.
 
-No external visual asset is added. Libraries and platform documentation:
+## Performance and limits
+
+Final live measurement: Chrome 153, RTX 3060/D3D11, five-second explicit rotation.
+Desktop 1440×1000: approximately 60 fps, 1.63 seconds to ready. Pixel 7 emulation
+412×839, render DPR 1.3: approximately 60 fps, 1.00 second to ready. Both report
+19 meshes and no page exceptions. These are observations on this desktop GPU and
+network, not performance measurements of a physical phone. Mobile emulation
+verifies layout and touch behaviour. Software-rendered CI screenshots are not a
+hardware performance claim; visibility lifecycle dispatch is simulated explicitly.
+
+Architectural limitations remain those of SOL-01: exterior only, simplified fine
+sculpture/ornament, repeated baked material swatches, and no survey-grade accuracy.
+There is no unresolved delivery blocker. The full requested player is published;
+source, assets, screenshots, automated checks and measurements are reproducible.
+
+## Software and attribution
+
+No external visual asset/font/environment map is added. Sources:
 [Three.js GLTFLoader](https://threejs.org/docs/pages/GLTFLoader.html),
 [OrbitControls](https://threejs.org/docs/pages/OrbitControls.html),
 [glTF Transform](https://gltf-transform.dev/cli),
+[Playwright headless browsers](https://playwright.dev/docs/browsers),
 [GitHub Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
-Generated model screenshots remain CC BY-SA 4.0 with SOL-01 attribution; original
-third-party source images retain their own licences and are not embedded here.
+Model/screenshots remain CC BY-SA 4.0 with SOL-01 attribution and modification
+notice. Original photo licences remain per source audit; no photo is embedded.
+Runtime software notices and original generated-asset licence are published and
+linked from the information dialog.
