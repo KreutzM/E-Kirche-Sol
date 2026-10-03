@@ -50,9 +50,11 @@ contact and facade shading. See the [screenshot index](../review/WEB-01/README.m
   with SwiftShader. These are actual WebGL images of the derived GLB.
 - Pixel 7 emulation exercises touch input, not a physical smartphone GPU.
   SwiftShader frame rate is not used as a physical-device performance claim.
-- Public Pages URL currently returns 404; Pages source activation is required.
-  CLI credentials are invalid and the connector has no Pages administration API.
-  The connected Browser runtime reports no available browser.
+- GitHub Pages is now activated with `build_type: workflow` via the recovered CLI
+  login. The first Linux browser run passed six cases but exhausted the two-minute
+  limit in each full screenshot review before the roof view. CI now uses regular
+  Chromium headless and a ten-minute allowance for that complete visual review;
+  no view, geometry, assertion or screenshot is removed.
 - Deployment build, public URL functionality, direct asset/download integrity and
   browser checks against the deployed version remain required before this Goal
   can be considered complete.

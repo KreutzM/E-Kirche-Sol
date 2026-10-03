@@ -25,6 +25,9 @@ Pixel 7 viewport, DPR and touch input; it is not a physical handset measurement.
 Set `PLAYER_URL` to test an already deployed site without starting a local server.
 Browser tests serve the built `dist/` at port 5183, so rebuild before testing;
 they do not use the development server or hot reload.
+CI uses regular Chromium's new headless mode, matching branded Chrome's browser
+implementation. The full six-view screenshot review has a ten-minute CI timeout
+because hosted software WebGL readback is slower; all views and assertions remain.
 
 ## Asset provenance and optimization
 

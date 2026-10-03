@@ -1,5 +1,8 @@
 import { test, expect } from '@playwright/test';
 test('Loads the actual model, changes views and exposes attribution/downloads', async ({ page }, testInfo) => {
+  // Software WebGL screenshot readback on hosted Linux is much slower than
+  // local Chrome. Keep every view and UI check; allow the full review to finish.
+  if (process.env.CI) test.setTimeout(600000);
   const errors:string[]=[];
   page.on('pageerror', e=>errors.push(e.message));
   await page.goto('./');
