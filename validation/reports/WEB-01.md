@@ -1,6 +1,6 @@
 # WEB-01 — interactive presentation of SOL-01
 
-Date: 2026-10-03. Status: local implementation; deployment acceptance pending.
+Date: 2026-10-03. Status: published; final compressed-transfer progress fix pending.
 
 ## Source integrity
 
@@ -55,9 +55,20 @@ contact and facade shading. See the [screenshot index](../review/WEB-01/README.m
   limit in each full screenshot review before the roof view. CI now uses regular
   Chromium headless and a ten-minute allowance for that complete visual review;
   no view, geometry, assertion or screenshot is removed.
-- Deployment build, public URL functionality, direct asset/download integrity and
-  browser checks against the deployed version remain required before this Goal
-  can be considered complete.
+- Successful [build/deployment 37113198257](https://github.com/KreutzM/E-Kirche-Sol/actions/runs/37113198257)
+  published app commit `8daf11f`; all eight Linux browser cases passed. The public
+  URL returns 200 and all eight desktop/mobile browser cases pass against it.
+  All ten published files match the CI artifact byte-for-byte, including both
+  original model downloads. A final progress-bar correction uses decoded size
+  from the build manifest when Pages compresses transfer bytes; its deployment
+  and final live acceptance still need verification.
+- Local real-GPU baseline: RTX 3060/D3D11, Chrome 153, desktop 1440×1000,
+  56.7 fps / 1.20 seconds to ready; emulated mobile 412×839 at render DPR 1.3,
+  56.6 fps. See [raw measurements](WEB-01-local-performance.json).
+- First public measurement: desktop 55.9 fps / 1.73 seconds to ready; emulated
+  mobile 56.0 fps / 1.02 seconds. Network transfer is approximately 4.0 MB thanks
+  to HTTP compression, while the decoded GLB remains 11.17 MB. These values are
+  observations on the named desktop GPU and network, not a phone performance claim.
 
 ## Software sources
 

@@ -219,9 +219,14 @@ async function start() {
     retry.hidden=true; status.hidden=false; progress.hidden=false; progress.value=0; text.textContent='Modell wird geladen …';
     const abort = new AbortController(); const timeout=setTimeout(()=>abort.abort(),60000);
     try {
+      const metadataRequest=fetch(`${base}assets/build-manifest.json`,{signal:abort.signal}).then(r=>r.ok?r.json():null).catch(()=>null);
       const response = await fetch(`${base}assets/church.web.glb`,{ signal:abort.signal });
       if(!response.ok) throw new Error(`HTTP ${response.status}`);
-      const total=Number(response.headers.get('content-length')); const reader=response.body?.getReader(); const chunks:Uint8Array[]=[]; let received=0;
+      const metadata=await metadataRequest;
+      // Fetch streams decoded bytes; Content-Length can describe gzip/Brotli
+      // transfer bytes instead. Prefer the exact decoded build size.
+      const total=Number.isSafeInteger(metadata?.web_bytes) && metadata.web_bytes>0 ? metadata.web_bytes : response.headers.get('content-encoding') ? 0 : Number(response.headers.get('content-length'));
+      const reader=response.body?.getReader(); const chunks:Uint8Array[]=[]; let received=0;
       if(!reader) throw new Error('Streaming unavailable');
       while(true) { const {done,value}=await reader.read(); if(done) break; chunks.push(value); received+=value.length; if(total>0) progress.value=Math.min(95,received/total*95); else progress.removeAttribute('value'); }
       const data=new Uint8Array(received); let offset=0; for(const chunk of chunks){data.set(chunk,offset);offset+=chunk.length;}

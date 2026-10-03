@@ -23,6 +23,14 @@ in headless Chrome on Windows, Chromium on CI. CI installs Chromium with
 `npx playwright install --with-deps chromium`. The mobile project emulates a
 Pixel 7 viewport, DPR and touch input; it is not a physical handset measurement.
 Set `PLAYER_URL` to test an already deployed site without starting a local server.
+`node scripts/benchmark.mjs <URL>` measures actual model loading, five seconds of
+explicit rotation, the available GPU renderer and full-screen transitions, with
+desktop and Pixel 7 emulation. It stores metrics/screenshots in `tmp/web-live/`.
+Run this separately from forced-SwiftShader functional acceptance; it reports the
+actual rendering backend and never claims that emulation is a physical phone.
+`node scripts/verify-public.mjs <URL> <CI-artifact-directory>` compares every
+published byte with the downloaded `web-player` CI artifact, including original
+GLB/Blender downloads and third-party notices. Reports go to `tmp/web-live/`.
 Browser tests serve the built `dist/` at port 5183, so rebuild before testing;
 they do not use the development server or hot reload.
 CI uses regular Chromium's new headless mode, matching branded Chrome's browser
